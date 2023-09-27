@@ -3,6 +3,7 @@ Repositório para o trabalho final da matéria de Programação Para Internet (P
 
 
 ## Obrigatoriedade
+- Os arquivos do Bootstrap devem ser baixados e incluídos no projeto.
 - As páginas devem ser responsivas.
 - É obrigatória a utilização do framework Bootstrap.
 - Todas as páginas devem ser padronizadas com um layout que define cabeçalho, barra de menus, parte principal para exibição de conteúdo e rodapé.
