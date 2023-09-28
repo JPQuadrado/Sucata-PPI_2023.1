@@ -6,6 +6,7 @@ Arquivo para marcar entregas.
 ## Quadrado
 - [ ] Algo.
 - [X] Algo Feito.
+- [X] Algo Feito 2.
 
 ## Pedro
 - [ ] Algo.
