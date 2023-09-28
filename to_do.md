@@ -5,7 +5,7 @@ Arquivo para marcar entregas.
   - [X] Edição de perfil do usuário: deve permitir o cadastro de uma foto e a exclusão da conta do usuário;
   - [ ] Cadastro/listagem/edição/exclusão de itens;
   - [ ] Listagem/exclusão de usuários;
-  - [ ] Sair do sistema;
+  - [X] Sair do sistema;
  
 ## Quadrado
 - [ ] Area Publica.
