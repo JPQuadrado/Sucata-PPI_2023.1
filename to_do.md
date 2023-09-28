@@ -1,4 +1,4 @@
-# TO-DO
+# :scroll: TO-DO
 Arquivo para marcar entregas.
 ## Vini
 - [ ] Algo.
