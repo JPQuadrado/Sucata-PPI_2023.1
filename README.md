@@ -1,12 +1,7 @@
 # Projeto Sucata : PPI - 2023/1
 Repositório para o trabalho final da matéria de Programação Para Internet (PPI) - Semestre 2023/1
 
-## To-Do
-### Vini
-- [ ] Algo.
-
-### Quadrado
-- [ ] Algo.
+[ :scroll: TO-DO](to_do.md)
 
 ## Obrigatoriedade
 - Os arquivos do Bootstrap devem ser baixados e incluídos no projeto.
