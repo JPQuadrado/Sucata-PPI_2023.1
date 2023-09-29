@@ -4,6 +4,8 @@ Arquivo para marcar entregas.
 - [ ] Area Privada.
   - [X] Edição de perfil do usuário: deve permitir o cadastro de uma foto e a exclusão da conta do usuário;
   - [ ] Cadastro/listagem/edição/exclusão de itens;
+         - [X]Cadastro em andamento
+        
   - [ ] Listagem/exclusão de usuários;
   - [X] Sair do sistema;
  
