@@ -12,12 +12,17 @@ Arquivo para marcar entregas.
 ## Quadrado
 - [ ] Area Publica.
 - [ ] Estudar Heros.
-- [ ] index.html: com informações sobre o sistema e objetivos.
-- [ ] sobre.html: com informações sobre a equipe desenvolvedora e a disciplina em que trabalho está inserido.
+- [/] index.html: com informações sobre o sistema e objetivos.
+  - [ ] Nav bar.
+  - [/] Footer.
+  - [ ] Revisão.
+- [/] sobre.html: com informações sobre a equipe desenvolvedora e a disciplina em que trabalho está inserido.
 - [ ] Uma página com uma lista de itens.
-- [ ] Opção de busca de algum item, A busca deve ser implementada e estar em funcionamento (Mock UP)
+- [X] Opção de busca de algum item - Colocado no index.
+- [ ] A busca deve ser implementada (Mock UP) -> Fazer cards com empresas falsas.
 - [ ] Uma página para login.
 - [ ] Uma página para cadastro de usuário.
+  - [ ] Validação com JS.
 
 ## Pedro
 - [ ] Algo.
