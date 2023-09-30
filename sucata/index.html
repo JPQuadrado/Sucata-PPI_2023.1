@@ -1,50 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sucata</title>
 
-        <!-- Custom styles for this template -->
-        <link rel="stylesheet"
-            href="/bootstrap-5.3.2-dist/css/bootstrap.min.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucata</title>
 
-        <link rel="stylesheet" href="css/style.css">
 
-    </head>
-    <body>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        <header>
-            <div class="collapse navbar-collapse justify-content-md-center"
-                id="navbarsExample10">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Centered
-                            nav only</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#"
-                            data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else
-                                    here</a></li>
-                        </ul>
-                    </li>
-                </ul>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+    </header>
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6">
+                <!-- Colocar aqui botão para busca ou imagem, talvez mapa de rota!-->
+                <div class="card card-cover h-100 overflow-hidden text-bg-light rounded-4 shadow-lg"
+                    style="background-image: url('');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-black text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Novas rotas com o seu apoio!</h3>
+                    </div>
+                </div>
             </div>
-        </header>
+            <div class="col-10 col-sm-8 col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Sucata, o site para a coleta de reciclaveis!
+                </h1>
+                <p class="lead">
+                    O sistema é dedicado a promover a sustentabilidade e a reciclagem em ambientes urbanos, direcionado para dois principais grupos de utilizadores: os recicladores e as cooperativas. A sua operação é simples e eficaz: usuários têm a opção de visitar pontos de coleta de resíduos ou manifestar o seu interesse em participar de uma rota de coleta.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="sobre/">
+                        <button class="btn btn-dark btn-block rounded-pill px-3" type="button">
+                            Sobre o Projeto
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <h1>Sucata.</h1>
-        <p>oioioioio</p>
+    <div class="container col-xxl-8 px-4 py-5">
 
-        <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
-    </body>
+        <p class="lead text-center fw-bolder">Busque pontos de coletas na sua região, digite o seu CEP.</p>
+
+        <form class="d-flex mt-3 mt-lg-0" role="search">
+            <input class="form-control me-2" type="search" placeholder="00000-000" aria-label="Search"
+                pattern="\d{5}-\d{3}">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </div>
+
+    <!--
+        Descer Nav Bar
+    -->
+    <footer class="footer mt-auto py-3 bg-body-tertiary">
+        <div class="container">
+            <span class="text-body-secondary">Projeto Sucata - 2023/1 - PPI</span>
+        </div>
+    </footer>
+
+
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
 </html>
