@@ -20,17 +20,17 @@ Arquivo para marcar entregas.
   - [ ] Nav bar.
   - [ ] Posição Footer.
   - [X] Revisão.
-- [ ] Uma página com uma lista de itens.
+- [X] Uma página com uma lista de itens.
   - [ ] Nav bar.
   - [ ] Posição Footer.
 - [X] Opção de busca de algum item - Colocado no index.
   - [X] Botão de busca tem que levar a pagina busca/.
-- [ ] A busca deve ser implementada (Mock UP) -> Fazer cards com empresas falsas.
+- [X] A busca deve ser implementada (Mock UP) -> Fazer cards com empresas falsas.
   - [ ] Nav bar.
   - [ ] Posição Footer.
   - [ ] Background color nos cards?
     - [ ] Simular melhor texto.
-- [ ] Uma página para login.
+- [X] Uma página para login.
   - [ ] Logar deve levar a página do Vini.
   - [ ] Nav bar.
   - [ ] Posição Footer.
