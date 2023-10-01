@@ -20,7 +20,8 @@ Arquivo para marcar entregas.
   - [ ] Nav bar.
   - [ ] Posição Footer.
   - [X] Revisão.
-- [X] Uma página com uma lista de itens.
+- [X] Uma página com uma lista de itens
+  - [ ] Trocar pelos cards do link -> https://getbootstrap.com/docs/5.3/helpers/stretched-link/
   - [ ] Nav bar.
   - [ ] Posição Footer.
 - [X] Opção de busca de algum item - Colocado no index.
@@ -35,7 +36,11 @@ Arquivo para marcar entregas.
   - [ ] Nav bar.
   - [ ] Posição Footer.
 - [ ] Uma página para cadastro de usuário.
+  - [ ] Fazer 2 forms - Pessoa/Empresa e Cooperativa.
   - [ ] Validação com JS.
+
+- [ ] Modal para cadastro no intuito de escolher o qual for sera mostrado?
+  - [ ] Gerado com JS? - Decidir como abordar
 
 ## Pedro
 - [ ] Algo.
