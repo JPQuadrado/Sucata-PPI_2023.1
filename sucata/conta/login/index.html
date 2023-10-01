@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="../../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Logar</title>
+    </head>
+    <body>
+        <header>
+            <!-- Colocar Nav Bar-->
+
+        </header>
+
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <!-- Tentar  colocar aqui JS da escrita -->
+                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Junte-se
+                        a nos pelo planeta! 🌎</h1>
+                    <p class="col-lg-10 fs-4">A mudança começa agora, ajude
+                        <span id="typeTexto" class="text-primary"></span><span
+                            id="cursor"
+                            class="text-primary">|</span></p>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary"
+                        enctype="application/x-www-form-urlencoded"
+                        method="post" action="#">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control"
+                                id="floatingInput"
+                                placeholder="name@example.com" name="email">
+                            <label for="floatingInput">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control"
+                                id="floatingPassword" placeholder="Senha"
+                                name="senha">
+                            <label for="floatingPassword">Senha</label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary mb-2"
+                            type="submit">Logar</button>
+
+                        <!-- <a href="#" class="btn btn-info" role="button">Link Button</a> -->
+                        <a href="../conta/cadastro/"
+                            class="w-100 btn btn-lg btn-dark"
+                            role="buto">Cadastrar</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descer Footer -->
+        <footer class="footer mt-auto py-3 bg-body-tertiary">
+            <div class="container">
+                <span class="text-body-secondary">Projeto Sucata - 2023/1 - PPI</span>
+            </div>
+        </footer>
+
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
