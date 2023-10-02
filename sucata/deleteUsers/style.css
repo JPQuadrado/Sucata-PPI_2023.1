@@ -1,0 +1,10 @@
+.slashes{
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+#div1,#div2,#div3,#div4{
+    visibility: hidden;
+}
