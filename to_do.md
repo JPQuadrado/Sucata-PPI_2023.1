@@ -11,7 +11,6 @@ Arquivo para marcar entregas.
  
 ## Quadrado
 - [ ] Area Publica.
-- [ ] Estudar Heros.
 - [X] index.html: com informações sobre o sistema e objetivos.
   - [ ] Nav bar.
   - [ ] Posição Footer.
@@ -35,10 +34,11 @@ Arquivo para marcar entregas.
   - [ ] Logar deve levar a página do Vini.
   - [ ] Nav bar.
   - [ ] Posição Footer.
-- [ ] Uma página para cadastro de usuário.
-  - [ ] Fazer 2 forms - Pessoa/Empresa e Cooperativa.
-  - [ ] Validação com JS.
-
+- [X] Uma página para cadastro de usuário.
+  - [X] Fazer 2 forms - Pessoa/Empresa e Cooperativa.
+    - [X] Ajuste CPF | CNPJ - Validação
+    - [ ] Testar validações
+  - [ ] Boostrap Validation : Usar
 - [ ] Modal para cadastro no intuito de escolher o qual for sera mostrado?
   - [ ] Gerado com JS? - Decidir como abordar
 
