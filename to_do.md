@@ -37,6 +37,7 @@ Arquivo para marcar entregas.
 - [X] Uma página para cadastro de usuário.
   - [X] Fazer 2 forms - Pessoa/Empresa e Cooperativa.
     - [X] Ajuste CPF | CNPJ - Validação
+    - [ ] Companie para o cliente
     - [ ] Testar validações
     - [ ] Tooltip para dica? Como falar do padrão desejado?
   - [ ] Boostrap Validation : Usar
