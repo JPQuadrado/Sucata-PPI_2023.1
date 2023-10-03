@@ -68,11 +68,13 @@
 
             <!-- ([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2}) - CPF
                     ([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2}) - CNPJ -->
+
             <div class="form-floating mb-3 col-lg-6">
                 <input type="text" class="form-control" id="cnpj" placeholder pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
                     required>
                 <label for="cnpj">CPF</label>
             </div>
+
 
             <div class="form-floating mb-3 col-lg-4">
                 <input type="tel" class="form-control" id="tel" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" placeholder
@@ -94,6 +96,7 @@
                 <input type="password" class="form-control" id="senha" placeholder required>
                 <label for="senha">Senha</label>
             </div>
+
 
             <!-- <button class="btn btn-block btn-success" type="submit">Cadastrar</button> -->
             <a href="/sucata/" type="button" class="btn btn-block btn-success">Cadastrar</a>

@@ -1,1 +1,0 @@
-//Ter que fazer script dinamico que pega os itens do banco, e adiciona dinamicamente novos itens na lista para dar display
