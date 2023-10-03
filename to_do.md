@@ -12,28 +12,28 @@ Arquivo para marcar entregas.
 ## Quadrado
 - [ ] Area Publica.
 - [X] index.html: com informações sobre o sistema e objetivos.
-  - [ ] Nav bar.
-  - [ ] Posição Footer.
-  - [ ] Revisão.
+  - [X] Nav bar.
+  - [X] Posição Footer.
+  - [X] Revisão.
 - [X] sobre.html: com informações sobre a equipe desenvolvedora e a disciplina em que trabalho está inserido.
-  - [ ] Nav bar.
-  - [ ] Posição Footer.
+  - [X] Nav bar.
+  - [X] Posição Footer.
   - [X] Revisão.
 - [X] Uma página com uma lista de itens
   - [ ] Trocar pelos cards do link -> https://getbootstrap.com/docs/5.3/helpers/stretched-link/
-  - [ ] Nav bar.
-  - [ ] Posição Footer.
+  - [X] Nav bar.
+  - [X] Posição Footer.
 - [X] Opção de busca de algum item - Colocado no index.
   - [X] Botão de busca tem que levar a pagina busca/.
 - [X] A busca deve ser implementada (Mock UP) -> Fazer cards com empresas falsas.
-  - [ ] Nav bar.
-  - [ ] Posição Footer.
+  - [X] Nav bar.
+  - [X] Posição Footer.
   - [ ] Background color nos cards?
     - [ ] Simular melhor texto.
 - [X] Uma página para login.
   - [ ] Logar deve levar a página do Vini.
-  - [ ] Nav bar.
-  - [ ] Posição Footer.
+  - [X] Nav bar.
+  - [X] Posição Footer.
 - [X] Uma página para cadastro de usuário.
   - [X] Fazer 2 forms - Pessoa/Empresa e Cooperativa.
     - [X] Ajuste CPF | CNPJ - Validação
