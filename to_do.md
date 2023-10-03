@@ -41,8 +41,9 @@ Arquivo para marcar entregas.
     - [ ] Testar validações
     - [ ] Tooltip para dica? Como falar do padrão desejado?
   - [ ] Boostrap Validation : Usar
-- [ ] Modal para cadastro no intuito de escolher o qual form
-  - [ ] Gerado com JS? - Decidir como abordar
+- [ ] Usar boostrap TABS
+  - [ ] Juntar 2 forms diferentes em um só.
+  - [ ] Apoio com JS? - Decidir como abordar
 
 ## Pedro
 - [ ] Algo.
