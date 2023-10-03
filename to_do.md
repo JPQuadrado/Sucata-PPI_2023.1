@@ -13,6 +13,7 @@ Arquivo para marcar entregas.
  
 ## Quadrado
 - [ ] Area Publica.
+  - [ ] "parte principal para exibição" - Obrigatorio tag main -> Ligar com .container-fluid para manter o que ja foi feito?
   - [ ] Validar Responsividade
 - [X] index.html: com informações sobre o sistema e objetivos.
   - [X] Nav bar.
