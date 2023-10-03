@@ -6,7 +6,7 @@ Arquivo para marcar entregas.
   - [ ] Cadastro/listagem/edição/exclusão de itens;
          - [X]Cadastro em andamento
         
-  - [ ] Listagem/exclusão de usuários;
+  - [X] Listagem/exclusão de usuários;
   - [X] Sair do sistema;
  
 ## Quadrado
