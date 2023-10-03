@@ -3,9 +3,13 @@ Arquivo para marcar entregas.
 ## Vini
 - [ ] Area Privada.
   - [X] Edição de perfil do usuário: deve permitir o cadastro de uma foto e a exclusão da conta do usuário;
-  - [X] Cadastro/listagem/edição/exclusão de itens;  
+        EditProfile
+  - [X] Cadastro/listagem/edição/exclusão de itens;
+        registerItem/ListItens  
   - [X] Listagem/exclusão de usuários;
+        ListUsers
   - [X] Sair do sistema;
+        Navbar signout button
  
 ## Quadrado
 - [ ] Area Publica.
