@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Cadastro - Corporativa</title>
+</head>
+
+<body class="my-lg-5">
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/sucata/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-recycle" viewBox="0 0 16 16">
+                        <path
+                            d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242-2.532-4.431zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24l2.552-4.467zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.498.498 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244l-1.716-3.004z" />
+                    </svg>
+                    <!-- Decidir se deixa o nome ou não -->
+                    <!-- <span class="w-40 h-40 text-center">Sucata</span> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/sucata/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/sucata/sobre/">Sobre</a>
+                        </li>
+                    </ul>
+                    <a href="/sucata/conta/login/" role="button" class="btn btn-outline-success m-lg-2">Entrar</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Qual o layout? Informaçõe diferentes para Pessoas e Coperativas? -->
+    <!-- Sistema de Abas? Talvez? -->
+
+    <!-- Cliente/Empresa -->
+    <!-- nome, telefone, email, zip(CEP) - Completar atuomatico (?), CPF e/ou CNPJ -->
+
+    <!-- Coperativa -->
+    <!-- nome, telefone, email, zip(CEP) - Completar atuomatico (?), CNPJ, Materiais ( Chekc box para reciclaveis.) -->
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <!-- Usando TABS -->
+        <div class="container mt-5 mx-0">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-duvida-tab" data-bs-toggle="tab" data-bs-target="#nav-duvida"
+                        type="button" role="tab" aria-controls="nav-sobre" aria-selected="true">Sobre</button>
+                    <button class="nav-link" id="nav-cliente-tab" data-bs-toggle="tab" data-bs-target="#nav-cliente"
+                        type="button" role="tab" aria-controls="nav-cliente" aria-selected="false">Cliente</button>
+                    <button class="nav-link" id="nav-coperativa-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-coperativa" type="button" role="tab" aria-controls="nav-coperativa"
+                        aria-selected="false">Coperativa</button>
+                </div>
+            </nav>
+
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active mb-5" id="nav-duvida" role="tabpanel"
+                    aria-labelledby="nav-duvida-tab">
+                    <h3 class="pt-5 mb-4 display-6 lh-1 fw-bold">Duvidas Frequentes</h3>
+
+                    <p class="lead"> Antes de escolher como se cadastrar, qual formulario escolher, aqui está uma breve explicação do funcionamento do site</p>
+
+                    <h4 class="pt mb-2 display-7 lh-1 fw-bold">Funcionamento</h4>
+
+                    <p class="lead">
+                        O sistema proposto tem como principal objetivo facilitar a colaboração entre recicladores e cooperativas, com foco na coleta e reciclagem eficiente de materiais. Os recicladores têm a oportunidade de se cadastrar no sistema, o que lhes dá acesso a uma lista de pontos de coleta disponíveis na região.
+                    </p>
+
+                    <p class="lead">
+                        Eles também podem manifestar interesse em realizar coletas em pontos específicos. Por outro lado, as cooperativas também se cadastram no sistema, fornecendo informações detalhadas sobre sua área de atuação, capacidade de processamento e outros detalhes relevantes.
+                    </p>
+
+                    <p class="lead">
+                        As cooperativas desempenham um papel crucial ao organizar as coletas em resposta às manifestações de interesse dos recicladores. Isso envolve o agendamento de datas e horários adequados para a coleta dos materiais, garantindo que o processo seja conduzido de maneira eficaz e sustentável.
+                    </p>
+
+                    <p class="lead">
+                        Essa colaboração entre recicladores e cooperativas tem o propósito de aumentar a eficiência da reciclagem, contribuindo para práticas mais responsáveis em relação ao tratamento de resíduos e promovendo a sustentabilidade ambiental.
+                    </p>
+                </div>
+
+                <div class="tab-pane fade mb-5" id="nav-cliente" role="tabpanel" aria-labelledby="nav-cliente-tab">
+
+                    <h3 class="pt-5 mb-4 display-6 lh-1 fw-bold">Cadastro -
+                        Cliente</h3>
+
+                    <form action="#" enctype="application/x-www-form-urlencoded" method="post" id="coperativa"
+                        class="form-floating row g-2">
+
+                        <div class="form-floating mb-3 col-lg-8">
+                            <input type="text" class="form-control" id="nome" placeholder required>
+                            <label for="nome">Nome</label>
+                        </div>
+
+                        <div class="form-floating mb-3 col-lg-4">
+                            <input type="text" class="form-control" id="empresa" placeholder>
+                            <label for="empresa">Empresa</label>
+                        </div>                        
+
+                        <!-- ([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2}) - CPF
+                    ([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2}) - CNPJ -->
+
+                        <div class="form-floating mb-3 col-lg-6">
+                            <input type="text" class="form-control" id="cnpj" placeholder
+                                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                            <label for="cnpj">CPF</label>
+                        </div>
+
+
+                        <div class="form-floating mb-3 col-lg-4">
+                            <input type="tel" class="form-control" id="tel" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}"
+                                placeholder required>
+                            <label for="tel">Telefone</label>
+                        </div>
+
+                        <div class="form-floating mb-3 col-lg-2">
+                            <input type="cep" class="form-control" id="cep" pattern="\d{5}-\d{3}" placeholder required>
+                            <label for="cep">CEP</label>
+                        </div>
+
+                        <div class="form-floating mb-3 col-lg-6">
+                            <input type="email" class="form-control" id="Email" placeholder required>
+                            <label for="Email">Email</label>
+                        </div>
+
+                        <div class="form-floating mb-3 col-lg-6">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Senha"
+                                name="senha" required>
+                            <label for="floatingPassword">Senha</label>
+                        </div>
+                        
+
+                        <button class="btn btn-block btn-success" type="submit">Cadastrar</button>
+                        <!-- <a href="/sucata/" type="button" class="btn btn-block btn-success">Cadastrar</a> -->
+
+                    </form>
+                </div>
+
+                <div class="tab-pane fade mb-5" id="nav-coperativa" role="tabpanel"
+                    aria-labelledby="nav-coperativa-tab">
+                    <h3 class="pt-5 mb-4 display-6 lh-1 fw-bold">Cadastro -
+                        Coperativa</h3>
+
+                    <form action="#" enctype="application/x-www-form-urlencoded" method="post" id="coperativa"
+                        class="form-floating row g-2">
+
+                        <div class="form-floating mb-3 col-lg-12">
+                            <input type="text" class="form-control" id="nome" placeholder required>
+                            <label for="nome">Nome</label>
+                        </div>
+
+                        <!-- ([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2}) - CPF
+                                ([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2}) - CNPJ -->
+                        <div class="form-floating mb-3 col-lg-6">
+                            <input type="text" class="form-control" id="cnpj" placeholder
+                                pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" required>
+                            <label for="cnpj">CNPJ</label>
+                        </div>
+
+                        <div class="form-floating mb-3 col-lg-4">
+                            <input type="tel" class="form-control" id="tel" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}"
+                                placeholder required>
+                            <label for="tel">Telefone</label>
+                        </div>
+
+                        <div class="form-floating mb-3 col-lg-2">
+                            <input type="cep" class="form-control" id="cep" pattern="\d{5}-\d{3}" placeholder required>
+                            <label for="cep">CEP</label>
+                        </div>
+
+                        <div class="form-floating mb-3 col-lg-6">
+                            <input type="email" class="form-control" id="Email" placeholder required>
+                            <label for="Email">Email</label>
+                        </div>
+
+                        <div class="form-floating mb-3 col-lg-6">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Senha"
+                                name="senha" required>
+                            <label for="floatingPassword">Senha</label>
+                        </div>
+
+                        <p class="lead fw-bold">Areas de atuação</p>
+                        <div class="mb-3 col-lg-12">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="bateria" value="bateria">
+                                <label class="form-check-label" for="bateria">Baterias</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="metal" value="metal">
+                                <label class="form-check-label" for="metal">Metais</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="papel" value="papel">
+                                <label class="form-check-label" for="papel">Papel</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="plastico" value="plastico">
+                                <label class="form-check-label" for="plastico">Plastico</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="vidro" value="vidro">
+                                <label class="form-check-label" for="vidro">Vidro</label>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-block btn-success" type="submit">Cadastrar</button>
+                        <!-- <a href="/sucata/" type="button" class="btn btn-block btn-success">Cadastrar</a> -->
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../../bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+
+    <footer class="footer mt-auto py-3 bg-body-tertiary fixed-bottom">
+        <div class="container">
+            <span class="text-body-secondary">Projeto Sucata - 2023/1 - PPI</span>
+        </div>
+    </footer>
+</body>
+
+</html>

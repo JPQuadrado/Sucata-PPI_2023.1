@@ -13,6 +13,7 @@ Arquivo para marcar entregas.
  
 ## Quadrado
 - [ ] Area Publica.
+  - [ ] Validar Responsividade
 - [X] index.html: com informações sobre o sistema e objetivos.
   - [X] Nav bar.
   - [X] Posição Footer.
@@ -39,13 +40,12 @@ Arquivo para marcar entregas.
 - [X] Uma página para cadastro de usuário.
   - [X] Fazer 2 forms - Pessoa/Empresa e Cooperativa.
     - [X] Ajuste CPF | CNPJ - Validação
-    - [ ] Companie para o cliente
-    - [ ] Testar validações
-    - [ ] Tooltip para dica? Como falar do padrão desejado?
-  - [ ] Boostrap Validation : Usar
-- [ ] Usar boostrap TABS
-  - [ ] Juntar 2 forms diferentes em um só.
-  - [ ] Apoio com JS? - Decidir como abordar
+    - [X] Companie para o cliente
+    - [X] Testar validações (Pattern)
+    - [ ] Boostrap Validation : Usar
+      - [ ] Para informar padrão desejado formato, usar Validation Boostrap.  
+- [X] Usar boostrap TABS
+  - [X] Juntar 2 forms diferentes em um só.
 
 ## Pedro
 - [ ] Algo.
