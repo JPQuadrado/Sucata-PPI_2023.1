@@ -9,59 +9,52 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <div class="dropdown">
-            <a class="navbar-brand dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="slashes"></div>
-              <div class="slashes"></div>
-              <div class="slashes"></div>
+            <a class="navbar-brand" href="/sucata/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-recycle" viewBox="0 0 16 16">
+                    <path
+                        d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242-2.532-4.431zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24l2.552-4.467zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.498.498 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244l-1.716-3.004z" />
+                </svg>
+                <!-- Decidir se deixa o nome ou não -->
+                <!-- <span class="w-40 h-40 text-center">Sucata</span> -->
             </a>
-          
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="editProfile.html">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-             <!--<li><a class="dropdown-item" href="#">Option 3</a></li>   mais opções-->
-            </ul>
-          </div>  
-            <div class="collapse navbar-collapse" id="navbarsExample04">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/sucata/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link active" aria-current="page" href="/sucata/sobre/">Sobre</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                    
                 </ul>
-                <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-                    <button class="btn btn-primary">Login</button>
-                </div>
+                <a href="#" role="button" class="btn btn-outline-danger m-lg-2">Sair</a>
             </div>
         </div>
     </nav>
+</header>
 
-    <main>
+    <main class="my-5">
 
       <div class="container light-style flex-grow-1 container-p-y">
 
         <h4 class="font-weight-bold py-3 mb-4">
-          Account settings
+          Configurações da Conta
         </h4>
     
         <div class="card overflow-hidden">
           <div class="row no-gutters row-bordered row-border-light">
             <div class="col-md-3 pt-0">
               <div class="list-group list-group-flush account-settings-links">
-                <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-general">General</a>
-                <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-change-password">Change password</a>
-                <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-info">Info</a>
-                <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-social-links">Social links</a>
-                <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-connections">Connections</a>
-                <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-notifications">Delete Account</a>
+                <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-general">Geral</a><!--O active faz ele deixar azul e mostrar em qual aba o usuário esta atualmente, fazer ficar dinamico a adição do active de acordo com a aba que o usuário está-->
+                <a class="list-group-item list-group-item-action text-danger" data-toggle="list" href="#account-notifications"> Deletar conta</a>
               </div>
             </div>
             <div class="col-md-9">
@@ -72,7 +65,7 @@
                     <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="d-block ui-w-80">
                     <div class="media-body ml-4">
                       <label class="btn btn-outline-primary">
-                        Upload new photo
+                        Carregar nova foto
                         <input type="file" class="account-settings-fileinput">
                       </label> &nbsp;
                       <button type="button" class="btn btn-default md-btn-flat">Reset</button>
@@ -83,241 +76,69 @@
                   <hr class="border-light m-0">
     
                   <div class="card-body">
-                    <div class="form-group">
-                      <label class="form-label">Nome</label>
-                      <input type="text" class="form-control mb-1" value="nmaxwell">
+                    <div class="form-floating mb-3">
+                      <input type="text" id="Nome" class="form-control" placeholder="nmaxwell">
+                      <label for="Nome">Nome</label>
                     </div>
-                    <div class="form-group">
-                      <label class="form-label">CPF</label>
-                      <input type="text" class="form-control" value="000.000.000-00">
+                    <div class="form-floating mb-3">
+                      <input type="text" id="CPF" class="form-control" placeholder="000.000.000-00">
+                      <label for="CPF">CPF</label>
                     </div>
-                    <div class="form-group">
-                      <label class="form-label">E-mail</label>
-                      <input type="text" class="form-control mb-1" value="nmaxwell@mail.com">
+                    <div class="form-floating mb-3">
+                      <input type="email" id="Email" class="form-control" placeholder="nmaxwell@mail.com">
+                      <label for="Email">E-mail</label>
                     </div>
-                    <div class="form-group">
-                      <label class="form-label">Telefone</label>
-                      <input type="text" class="form-control" value="(00) 00000-0000">
+                    <div class="form-floating mb-3">
+                      <input type="text" id="Telefone" class="form-control" placeholder="(00) 00000-0000">
+                      <label for="Telefone">Telefone</label> 
                     </div>
-                    <div class="form-group">
-                      <label class="form-label">CEP</label>
-                      <input type="text" class="form-control" value="00000-000">
+                    <div class="form-floating mb-3">
+                      <input type="text" id="CEP" class="form-control" placeholder="00000-000">
+                      <label for="CEP">CEP</label>
                     </div>
-                    <div class="form-group">
-                      <label class="form-label">Empresa</label>
-                      <input type="text" class="form-control" value="Company Ltd.">
+                    <div class="form-floating mb-3">
+                      <input type="text" id="Empresa" class="form-control" placeholder="Company Ltd.">
+                      <label for="Empresa">Empresa</label>
                     </div>
-                  </div>
-    
+                    
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="inputPassword4">Senha Antiga</label>
+                            <input type="password" class="form-control" id="inputPassword5" />
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword5">Nova Senha</label>
+                            <input type="password" class="form-control" id="inputPassword5" />
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword6">Confirmar Senha</label>
+                            <input type="password" class="form-control" id="inputPassword6" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mb-2">Requisitos de Senha</p>
+                        <p class="small text-muted mb-2">Para criar uma nova senha, você precisa atender a todos os seguintes requisitos:</p>
+                        <ul class="small text-muted pl-4 mb-0">
+                            <li>Mínimo 8 caracteres</li>
+                            <li>Pelo menos um caracter especial</li>
+                            <li>Pelo menos um número</li>
+                            <li>Não pode ser igual à senha anterior</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="account-change-password">
-                  <div class="card-body pb-2">
-    
-                    <div class="form-group">
-                      <label class="form-label">Current password</label>
-                      <input type="password" class="form-control">
-                    </div>
-    
-                    <div class="form-group">
-                      <label class="form-label">New password</label>
-                      <input type="password" class="form-control">
-                    </div>
-    
-                    <div class="form-group">
-                      <label class="form-label">Repeat new password</label>
-                      <input type="password" class="form-control">
-                    </div>
-    
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="account-info">
-                  <div class="card-body pb-2">
-    
-                    <div class="form-group">
-                      <label class="form-label">Bio</label>
-                      <textarea class="form-control" rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nunc arcu, dignissim sit amet sollicitudin iaculis, vehicula id urna. Sed luctus urna nunc. Donec fermentum, magna sit amet rutrum pretium, turpis dolor molestie diam, ut lacinia diam risus eleifend sapien. Curabitur ac nibh nulla. Maecenas nec augue placerat, viverra tellus non, pulvinar risus.</textarea>
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Birthday</label>
-                      <input type="text" class="form-control" value="May 3, 1995">
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Country</label>
-                      <select class="custom-select">
-                        <option>USA</option>
-                        <option selected="">Canada</option>
-                        <option>UK</option>
-                        <option>Germany</option>
-                        <option>France</option>
-                      </select>
-                    </div>
-    
-    
-                  </div>
-                  <hr class="border-light m-0">
-                  <div class="card-body pb-2">
-    
-                    <h6 class="mb-4">Contacts</h6>
-                    <div class="form-group">
-                      <label class="form-label">Phone</label>
-                      <input type="text" class="form-control" value="+0 (123) 456 7891">
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Website</label>
-                      <input type="text" class="form-control" value="">
-                    </div>
-    
-                  </div>
-          
-                </div>
-                <div class="tab-pane fade" id="account-social-links">
-                  <div class="card-body pb-2">
-    
-                    <div class="form-group">
-                      <label class="form-label">Twitter</label>
-                      <input type="text" class="form-control" value="https://twitter.com/user">
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Facebook</label>
-                      <input type="text" class="form-control" value="https://www.facebook.com/user">
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Google+</label>
-                      <input type="text" class="form-control" value="">
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">LinkedIn</label>
-                      <input type="text" class="form-control" value="">
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Instagram</label>
-                      <input type="text" class="form-control" value="https://www.instagram.com/user">
-                    </div>
-    
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="account-connections">
-                  <div class="card-body">
-                    <button type="button" class="btn btn-twitter">Connect to <strong>Twitter</strong></button>
-                  </div>
-                  <hr class="border-light m-0">
-                  <div class="card-body">
-                    <h5 class="mb-2">
-                      <a href="javascript:void(0)" class="float-right text-muted text-tiny"><i class="ion ion-md-close"></i> Remove</a>
-                      <i class="ion ion-logo-google text-google"></i>
-                      You are connected to Google:
-                    </h5>
-                    nmaxwell@mail.com
-                  </div>
-                  <hr class="border-light m-0">
-                  <div class="card-body">
-                    <button type="button" class="btn btn-facebook">Connect to <strong>Facebook</strong></button>
-                  </div>
-                  <hr class="border-light m-0">
-                  <div class="card-body">
-                    <button type="button" class="btn btn-instagram">Connect to <strong>Instagram</strong></button>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="account-notifications">
-                  <div class="card-body pb-2">
-    
-                    <h6 class="mb-4">Activity</h6>
-    
-                    <div class="form-group">
-                      <label class="switcher">
-                        <input type="checkbox" class="switcher-input" checked="">
-                        <span class="switcher-indicator">
-                          <span class="switcher-yes"></span>
-                          <span class="switcher-no"></span>
-                        </span>
-                        <span class="switcher-label">Email me when someone comments on my article</span>
-                      </label>
-                    </div>
-                    <div class="form-group">
-                      <label class="switcher">
-                        <input type="checkbox" class="switcher-input" checked="">
-                        <span class="switcher-indicator">
-                          <span class="switcher-yes"></span>
-                          <span class="switcher-no"></span>
-                        </span>
-                        <span class="switcher-label">Email me when someone answers on my forum thread</span>
-                      </label>
-                    </div>
-                    <div class="form-group">
-                      <label class="switcher">
-                        <input type="checkbox" class="switcher-input">
-                        <span class="switcher-indicator">
-                          <span class="switcher-yes"></span>
-                          <span class="switcher-no"></span>
-                        </span>
-                        <span class="switcher-label">Email me when someone follows me</span>
-                      </label>
-                    </div>
-                  </div>
-                  <hr class="border-light m-0">
-                  <div class="card-body pb-2">
-    
-                    <h6 class="mb-4">Application</h6>
-    
-                    <div class="form-group">
-                      <label class="switcher">
-                        <input type="checkbox" class="switcher-input" checked="">
-                        <span class="switcher-indicator">
-                          <span class="switcher-yes"></span>
-                          <span class="switcher-no"></span>
-                        </span>
-                        <span class="switcher-label">News and announcements</span>
-                      </label>
-                    </div>
-                    <div class="form-group">
-                      <label class="switcher">
-                        <input type="checkbox" class="switcher-input">
-                        <span class="switcher-indicator">
-                          <span class="switcher-yes"></span>
-                          <span class="switcher-no"></span>
-                        </span>
-                        <span class="switcher-label">Weekly product updates</span>
-                      </label>
-                    </div>
-                    <div class="form-group">
-                      <label class="switcher">
-                        <input type="checkbox" class="switcher-input" checked="">
-                        <span class="switcher-indicator">
-                          <span class="switcher-yes"></span>
-                          <span class="switcher-no"></span>
-                        </span>
-                        <span class="switcher-label">Weekly blog digest</span>
-                      </label>
-                    </div>
-    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                <button type="submit" class="btn btn-primary">Save Change</button>
+            </form>
         </div>
-    
-        <div class="text-right mt-3">
-          <button type="button" class="btn btn-primary">Save changes</button>&nbsp;
-          <button type="button" class="btn btn-default">Cancel</button>
-          <!--Caso o usuario opte por cancelar a edição voltar para a home, criar link para isso-->
-        </div>
-    
-      </div>
-       
+    </div>
+</div>
     </main>
 
-    <div class="container">
-        <footer class="py-3 my-4">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-            </ul>
-        </footer>
-    </div>
+    <footer class="footer mt-auto py-3 bg-body-tertiary fixed-bottom">
+      <div class="container">
+          <span class="text-body-secondary">Projeto Sucata - 2023/1 - PPI</span>
+      </div>
+    </footer>
 
     <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
 </body
