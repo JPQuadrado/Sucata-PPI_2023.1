@@ -57,8 +57,9 @@
         <div class="container mt-5 mx-0">
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-duvida-tab" data-bs-toggle="tab" data-bs-target="#nav-duvida"
-                        type="button" role="tab" aria-controls="nav-sobre" aria-selected="true">Sobre</button>
+                    <button class="nav-link active" id="nav-duvida-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-duvida" type="button" role="tab" aria-controls="nav-sobre"
+                        aria-selected="true">Sobre</button>
                     <button class="nav-link" id="nav-cliente-tab" data-bs-toggle="tab" data-bs-target="#nav-cliente"
                         type="button" role="tab" aria-controls="nav-cliente" aria-selected="false">Cliente</button>
                     <button class="nav-link" id="nav-coperativa-tab" data-bs-toggle="tab"
@@ -72,24 +73,35 @@
                     aria-labelledby="nav-duvida-tab">
                     <h3 class="pt-5 mb-4 display-6 lh-1 fw-bold">Duvidas Frequentes</h3>
 
-                    <p class="lead"> Antes de escolher como se cadastrar, qual formulario escolher, aqui está uma breve explicação do funcionamento do site</p>
+                    <p class="lead"> Antes de escolher como se cadastrar, qual formulario escolher, aqui está uma breve
+                        explicação do funcionamento do site</p>
 
                     <h4 class="pt mb-2 display-7 lh-1 fw-bold">Funcionamento</h4>
 
                     <p class="lead">
-                        O sistema proposto tem como principal objetivo facilitar a colaboração entre recicladores e cooperativas, com foco na coleta e reciclagem eficiente de materiais. Os recicladores têm a oportunidade de se cadastrar no sistema, o que lhes dá acesso a uma lista de pontos de coleta disponíveis na região.
+                        O sistema proposto tem como principal objetivo facilitar a colaboração entre recicladores e
+                        cooperativas, com foco na coleta e reciclagem eficiente de materiais. Os recicladores têm a
+                        oportunidade de se cadastrar no sistema, o que lhes dá acesso a uma lista de pontos de coleta
+                        disponíveis na região.
                     </p>
 
                     <p class="lead">
-                        Eles também podem manifestar interesse em realizar coletas em pontos específicos. Por outro lado, as cooperativas também se cadastram no sistema, fornecendo informações detalhadas sobre sua área de atuação, capacidade de processamento e outros detalhes relevantes.
+                        Eles também podem manifestar interesse em realizar coletas em pontos específicos. Por outro
+                        lado, as cooperativas também se cadastram no sistema, fornecendo informações detalhadas sobre
+                        sua área de atuação, capacidade de processamento e outros detalhes relevantes.
                     </p>
 
                     <p class="lead">
-                        As cooperativas desempenham um papel crucial ao organizar as coletas em resposta às manifestações de interesse dos recicladores. Isso envolve o agendamento de datas e horários adequados para a coleta dos materiais, garantindo que o processo seja conduzido de maneira eficaz e sustentável.
+                        As cooperativas desempenham um papel crucial ao organizar as coletas em resposta às
+                        manifestações de interesse dos recicladores. Isso envolve o agendamento de datas e horários
+                        adequados para a coleta dos materiais, garantindo que o processo seja conduzido de maneira
+                        eficaz e sustentável.
                     </p>
 
                     <p class="lead">
-                        Essa colaboração entre recicladores e cooperativas tem o propósito de aumentar a eficiência da reciclagem, contribuindo para práticas mais responsáveis em relação ao tratamento de resíduos e promovendo a sustentabilidade ambiental.
+                        Essa colaboração entre recicladores e cooperativas tem o propósito de aumentar a eficiência da
+                        reciclagem, contribuindo para práticas mais responsáveis em relação ao tratamento de resíduos e
+                        promovendo a sustentabilidade ambiental.
                     </p>
                 </div>
 
@@ -109,26 +121,36 @@
                         <div class="form-floating mb-3 col-lg-4">
                             <input type="text" class="form-control" id="empresa" placeholder>
                             <label for="empresa">Empresa</label>
-                        </div>                        
+                        </div>
 
                         <!-- ([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2}) - CPF
                     ([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2}) - CNPJ -->
 
                         <div class="form-floating mb-3 col-lg-6">
-                            <input type="text" class="form-control" id="cnpj" placeholder
+                            <input type="text" class="form-control is-invalid" id="cnpj" placeholder
                                 pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                            <div class="invalid-feedback">
+                                Por favor, escreva o CPF como 000.000.000-00
+                            </div>
                             <label for="cnpj">CPF</label>
                         </div>
 
 
                         <div class="form-floating mb-3 col-lg-4">
-                            <input type="tel" class="form-control" id="tel" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}"
-                                placeholder required>
+                            <input type="tel" class="form-control is-invalid" id="tel"
+                                pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" placeholder required>
+                            <div class="invalid-feedback">
+                                Por favor, escreva o Telefone como (00) 00000-0000
+                            </div>
                             <label for="tel">Telefone</label>
                         </div>
 
                         <div class="form-floating mb-3 col-lg-2">
-                            <input type="cep" class="form-control" id="cep" pattern="\d{5}-\d{3}" placeholder required>
+                            <input type="cep" class="form-control is-invalid" id="cep" pattern="\d{5}-\d{3}" placeholder
+                                required>
+                            <div class="invalid-feedback">
+                                Por favor, escreva o CEP como 00000-000
+                            </div>
                             <label for="cep">CEP</label>
                         </div>
 
@@ -142,7 +164,7 @@
                                 name="senha" required>
                             <label for="floatingPassword">Senha</label>
                         </div>
-                        
+
 
                         <button class="btn btn-block btn-success" type="submit">Cadastrar</button>
                         <!-- <a href="/sucata/" type="button" class="btn btn-block btn-success">Cadastrar</a> -->
@@ -166,19 +188,29 @@
                         <!-- ([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2}) - CPF
                                 ([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2}) - CNPJ -->
                         <div class="form-floating mb-3 col-lg-6">
-                            <input type="text" class="form-control" id="cnpj" placeholder
+                            <input type="text" class="form-control is-invalid" id="cnpj" placeholder
                                 pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" required>
                             <label for="cnpj">CNPJ</label>
+                            <div class="invalid-feedback">
+                                Por favor, escreva o CNPJ como 00.000.000/0001-00
+                            </div>
                         </div>
 
                         <div class="form-floating mb-3 col-lg-4">
-                            <input type="tel" class="form-control" id="tel" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}"
-                                placeholder required>
+                            <input type="tel" class="form-control is-invalid" id="tel"
+                                pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" placeholder required>
+                            <div class="invalid-feedback">
+                                Por favor, escreva o Telefone como (00) 00000-0000
+                            </div>
                             <label for="tel">Telefone</label>
                         </div>
 
                         <div class="form-floating mb-3 col-lg-2">
-                            <input type="cep" class="form-control" id="cep" pattern="\d{5}-\d{3}" placeholder required>
+                            <input type="cep" class="form-control is-invalid" id="cep" pattern="\d{5}-\d{3}" placeholder
+                                required>
+                            <div class="invalid-feedback">
+                                Por favor, escreva o CEP como 00000-000
+                            </div>
                             <label for="cep">CEP</label>
                         </div>
 
@@ -193,11 +225,12 @@
                             <label for="floatingPassword">Senha</label>
                         </div>
 
-                        <p class="lead fw-bold">Areas de atuação</p>
+                        <p class="lead fw-bold">Selecione ao menos uma area de atuação</p>
                         <div class="mb-3 col-lg-12">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="bateria" value="bateria">
                                 <label class="form-check-label" for="bateria">Baterias</label>
+
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="metal" value="metal">
