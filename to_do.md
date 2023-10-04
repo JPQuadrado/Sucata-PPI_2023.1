@@ -24,7 +24,7 @@ Arquivo para marcar entregas.
   - [X] Posição Footer.
   - [X] Revisão.
 - [X] Uma página com uma lista de itens
-  - [ ] Trocar pelos cards do link -> https://getbootstrap.com/docs/5.3/helpers/stretched-link/
+  - [X] Trocar pelos cards do link -> https://getbootstrap.com/docs/5.3/helpers/stretched-link/
   - [X] Nav bar.
   - [X] Posição Footer.
 - [X] Opção de busca de algum item - Colocado no index.
