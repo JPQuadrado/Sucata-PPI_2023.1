@@ -12,9 +12,9 @@ Arquivo para marcar entregas.
         Navbar sign out button
  
 ## Quadrado
+
 - [ ] Area Publica.
-  - [ ] "parte principal para exibição" - Obrigatorio tag main -> Ligar com .container-fluid para manter o que ja foi feito?
-  - [ ] Validar Responsividade
+  - [X] Validar Responsividade
 - [X] index.html: com informações sobre o sistema e objetivos.
   - [X] Nav bar.
   - [X] Posição Footer.
@@ -32,8 +32,8 @@ Arquivo para marcar entregas.
 - [X] A busca deve ser implementada (Mock UP) -> Fazer cards com empresas falsas.
   - [X] Nav bar.
   - [X] Posição Footer.
-  - [ ] Background color nos cards?
-    - [ ] Simular melhor texto.
+  - [X] Background color nos cards?
+    - [X] Simular melhor texto.
 - [X] Uma página para login.
   - [ ] Logar deve levar a página do Vini.
   - [X] Nav bar.
@@ -43,10 +43,14 @@ Arquivo para marcar entregas.
     - [X] Ajuste CPF | CNPJ - Validação
     - [X] Companie para o cliente
     - [X] Testar validações (Pattern)
-    - [ ] Boostrap Validation : Usar
-      - [ ] Para informar padrão desejado formato, usar Validation Boostrap.  
+    - [X] Boostrap Validation : Usar
+      - [X] Para informar padrão desejado formato, usar Validation Boostrap.  
 - [X] Usar boostrap TABS
   - [X] Juntar 2 forms diferentes em um só.
+
+### Duvidas
+  - Botão Buscar no Nav?
+  - Validations -> Tooltip?
 
 ## Pedro
 - [ ] Algo.
