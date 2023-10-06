@@ -34,6 +34,19 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/sucata/sobre/">Sobre</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/sucata/listUsers/">Usuários</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/sucata/registerItem/">Cadastrar Pontos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/sucata/listItems/">Pontos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/sucata/editProfile/">Configurações</a>
+                        </li>
+
                     </ul>
                     <a href="/sucata/conta/login/" role="button" class="btn btn-outline-danger m-lg-2">Sair</a>
                 </div>
@@ -48,9 +61,8 @@
         <H2>Cadastro de pontos de coleta</H2>
 
         <div class="form-floating mb-3">
-            <input id="Nome" type="text" class="form-control" placeholder required>
+            <input maxlength="40" id="Nome" placeholder type="text" class="form-control is-invalid" placeholder required>
             <label for="Nome">Nome</label>
-            
         </div>
 
             <div class="form-floating mb-3">
