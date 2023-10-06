@@ -4,3 +4,7 @@
     background-color: white;
     margin-bottom: 5px;
 }
+
+#popup{
+    display: none;
+}
