@@ -31,10 +31,12 @@ Arquivo para marcar entregas.
  
 ## Quadrado
 - [ ] Fixes
-  - [ ] Adicionar foto no form de cadastro.
-  - [ ] Adicionar CEP no cadastro de Pontos.
-  - [ ] Trocar listagem de pontos no buscar - Usar molde da área privada.
-  - [ ] Molde sem editar e excluir para cliente sem compania.
+  - [X] Adicionar foto no form de cadastro.
+  - [X] Adicionar CEP no cadastro de Pontos.
+  - [ ] Revisar Form de cadastro de Pontos.
+  - [ ] Trocar listagem de pontos no buscar - Usar molde da área privada
+  - [ ] Molde sem editar e excluir para cliente sem compania
+  - [X] Melhorias Boostrap 5 - Validation - Adicionado JS
 
 - [ ] Backend
   - [ ] Criar classes
@@ -48,6 +50,7 @@ Arquivo para marcar entregas.
     - [ ] Validate Session
     - [ ] Create Session
     - [ ] Hello for session
+  - [ ] Criar AJAX para atualização de Dados - Exemplo Loja
 
 ## Pedro
 - [ ] Algo.
