@@ -2,7 +2,6 @@
 - [ ] banco de dados
 
 - [ ] cadastro
-  - [ ] adicionar foto
   - [ ] tipos de cadastro (cliente, corporativa)
   - [ ] validação no back
 
@@ -31,8 +30,24 @@ Arquivo para marcar entregas.
 - [X] Algo Feito.
  
 ## Quadrado
-- [ ] Algo.
-- [X] Algo Feito.
+- [ ] Fixes
+  - [ ] Adicionar foto no form de cadastro.
+  - [ ] Adicionar CEP no cadastro de Pontos.
+  - [ ] Trocar listagem de pontos no buscar - Usar molde da área privada.
+  - [ ] Molde sem editar e excluir para cliente sem compania.
+
+- [ ] Backend
+  - [ ] Criar classes
+    - [ ] Usuário
+    - [ ] Coperativa
+    - [ ] Pontos
+  - [ ] Salvar fotos
+    - [ ] Cliente
+    - [ ] Mapa para Pontos
+  - [ ] Login
+    - [ ] Validate Session
+    - [ ] Create Session
+    - [ ] Hello for session
 
 ## Pedro
 - [ ] Algo.
