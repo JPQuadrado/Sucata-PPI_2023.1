@@ -42,11 +42,14 @@ create table ponto (
 	ponto_localidade varchar(50) not null,
 	ponto_complemento varchar(50) not null,
 	ponto_logradouro varchar(50) not null,
+	user_bairro VARCHAR(50) NOT NULL,
 	vidro bool not null,
 	bateria bool not null,
 	metal bool not null,
 	papel bool not null,
-	plastico bool not null
+	plastico bool not null,
+	cooperativa_id INT NOT NULL,
+    FOREIGN KEY (cooperativa_id) REFERENCES cooperativa(cooperativa_id)
 );
 
 
