@@ -1,0 +1,15 @@
+Array
+(
+    [nome] => Joao Pedro
+    [empresa] => 1
+    [cpf] => 000.000.000-00
+    [tel] => (34) 00000-0000
+    [cepCliente] => 01001-000
+    [logradouro] => Praça da Sé
+    [bairro] => Sé
+    [localidade] => São Paulo
+    [uf] => SP
+    [complemento] => 15785
+    [email] => a@a.zzz
+    [senha] => 123
+)

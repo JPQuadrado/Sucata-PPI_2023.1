@@ -1,4 +1,6 @@
 <?php
+file_put_contents('debug.txt', print_r($_POST, true));
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     require_once "../conexao.php";
