@@ -7,29 +7,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     require_once '../model/cooperativaClass.php';
 
     if (isset($_POST['bateria'])) {
-        $bateria = true;
+        $bateria = 1;
     }else{
-        $bateria = false;
+        $bateria = 0;
     }
     if (isset($_POST['metal'])) {
-        $metal = true;
+        $metal = 1;
     }else{
-        $metal = false;
+        $metal = 0;
     }
     if (isset($_POST['papel'])) {
-        $papel = true;
+        $papel = 1;
     }else{
-        $papel = false;
+        $papel = 0;
     } 
     if (isset($_POST['plastico'])) {
-        $plastico = true;
+        $plastico = 1;
     }else{
-        $plastico = false;
+        $plastico = 0;
     }
     if (isset($_POST['vidro'])) {
-        $vidro = true;
+        $vidro = 1;
     }else{
-        $vidro = false;
+        $vidro = 0;
     }
 
     $conn = new Conexao();
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
 
         $sql = <<<SQL
-        INSERT INTO cooperativa (cooperativa_name, cooperativa_cep, cooperativa_logradouro, cooperativa_bairro, cooperativa_localidade, cooperativa_uf, cooperativa_complemento, cooperativa_cnpj, cooperativa_tel, vidro, bateria, metal, papel, plastico)
+        INSERT INTO cooperativa (cooperativa_name, cooperativa_cnpj, cooperativa_cep, cooperativa_logradouro, cooperativa_bairro, cooperativa_localidade, cooperativa_uf, cooperativa_complemento, cooperativa_tel, vidro, bateria, metal, papel, plastico)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         SQL;
 
@@ -48,7 +48,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // cadastrar dados fornecidos pelo usuário 
         $stmt = $conn->conexao->prepare($sql);
         $stmt->execute([
-            $cooperativa->getName(), $cooperativa->getCep(), $cooperativa->getLogradouro(), $cooperativa->getBairro(), $cooperativa->getLocalidade(), $cooperativa->getUf(), $cooperativa->getComplemento(), $cooperativa->getCnpj(), $cooperativa->getTel(), $cooperativa->getVidro(), $cooperativa->getBateria(), $cooperativa->getMetal(), $cooperativa->getPapel(), $cooperativa->getPlastico()
+            $cooperativa->getName(), 
+            $cooperativa->getCnpj(), 
+            $cooperativa->getCep(), 
+            $cooperativa->getLogradouro(), 
+            $cooperativa->getBairro(), 
+            $cooperativa->getLocalidade(), 
+            $cooperativa->getUf(), 
+            $cooperativa->getComplemento(), 
+            $cooperativa->getTel(), 
+            $cooperativa->getVidro(),
+            $cooperativa->getBateria(),
+            $cooperativa->getMetal(),
+            $cooperativa->getPapel(),
+            $cooperativa->getPlastico()
         ]);
 
         $message = "Obrigado por participar! Seja bem vinda " . $cooperativa->getName();
