@@ -93,20 +93,20 @@
                         class="form-control" id="uf"
                         name="uf"
                         placeholder
-                        required disabled>
+                        required readonly>
                     <label for="uf">UF</label>
                 </div>
 
                 <div class="form-floating mb-3">
                     <input id="localidade" type="text"
                         class="form-control "
-                        placeholder required disabled>
+                        placeholder required readonly>
                     <label for="localidade" class="form-label">Localidade</label>
                 </div>
 
                 <div class="form-floating mb-3">
                     <input id="bairro" type="text"
-                        class="form-control" placeholder required disabled>
+                        class="form-control" placeholder required readonly>
                     <label for="bairro">Bairro</label>
                 </div>
 
@@ -115,7 +115,7 @@
                         class="form-control" id="logradouro"
                         name="logradouro"
                         placeholder
-                        required disabled>
+                        required readonly>
                     <label for="logradouro">Logradouro</label>
                 </div>
 
@@ -172,10 +172,11 @@
             </div>
         </footer>
 
-        <script src="js/script.js"></script>
-        <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/validation.js"></script>
-        <script src="js/buscaCep.js"></script>
+        <script defer src="js/script.js"></script>
+        <script defer src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script defer src="../../jquery-3.7.1.min.js"></script>
+        <script defer src="js/validation.js"></script>
+        <script defer src="js/buscaCep.js"></script>
 
     </body>
 </html>
