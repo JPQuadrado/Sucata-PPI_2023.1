@@ -4,8 +4,8 @@ create table cooperativa (
 	cooperativa_cnpj varchar(50) not null,
 	cooperativa_cep varchar(50) not null,
 	cooperativa_bairro varchar(50) not null,
-	cooperativa_localidade varchar(50) not null,
 	cooperativa_logradouro varchar(50) not null,
+	cooperativa_localidade varchar(50) not null,
 	cooperativa_uf varchar(2) not null,
 	cooperativa_complemento varchar(50) not null,
 	cooperativa_tel varchar(50) not null,
@@ -22,6 +22,7 @@ CREATE table users (
 	user_password varchar(50) not null,
 	user_name varchar(50) not null,
 	user_cep varchar(50) not null,
+	user_logradouro varchar(50) not null,
 	user_bairro varchar(50) not null,
 	user_localidade varchar(50) not null,
 	user_uf varchar(2) not null,
@@ -47,3 +48,9 @@ create table ponto (
 	papel bool not null,
 	plastico bool not null
 )
+
+
+-- Para testes:
+
+INSERT INTO cooperativa (cooperativa_id, cooperativa_name, cooperativa_cnpj, cooperativa_cep, cooperativa_bairro, cooperativa_logradouro, cooperativa_localidade, cooperativa_uf, cooperativa_complemento, cooperativa_tel, vidro, bateria, metal, papel, plastico)
+VALUES (1, 'Nome da Cooperativa', '123456789', '12345-678', 'Bairro da Cooperativa', 'Rua da Cooperativa', 'Localidade da Cooperativa', 'UF', 'Complemento da Cooperativa', 'Telefone da Cooperativa', true, false, true, false, true);
