@@ -1,6 +1,6 @@
 Array
 (
-    [nome] => Joao Pedro
+    [nome] => Obina
     [empresa] => 1
     [cpf] => 000.000.000-00
     [tel] => (34) 00000-0000
@@ -10,6 +10,6 @@ Array
     [localidade] => São Paulo
     [uf] => SP
     [complemento] => 15785
-    [email] => a@a.zzz
+    [email] => ob@ob.ob
     [senha] => 123
 )
