@@ -1,13 +1,12 @@
 Array
 (
-    [nome] => Coleta Praça
-    [cep] => 01001-000
-    [uf] => SP
-    [localidade] => São Paulo
-    [bairro] => Sé
-    [logradouro] => Praça da Sé
-    [complemento] => 158
-    [bateria] => bateria
-    [metal] => metal
-    [papel] => papel
+    [nome] => Coleta Atleta
+    [cep] => 38413-228
+    [uf] => MG
+    [localidade] => Uberlândia
+    [bairro] => Planalto
+    [logradouro] => Rua do Atleta
+    [complemento] => Passarela - Uchoa
+    [plastico] => plastico
+    [vidro] => vidro
 )
