@@ -7,7 +7,7 @@ class Conexao
     {
         if (!isset($this->conexao)) {
             try {
-                $this->conexao = new PDO('mysql:host=127.0.0.1;dbname=sucata', 'root', 'melo1208');
+                $this->conexao = new PDO('mysql:host=172.17.0.2;dbname=sucata', 'root', 'password');
             } catch (PDOException $e) {
                 echo 'Error: ' . $e->getMessage();
             }
