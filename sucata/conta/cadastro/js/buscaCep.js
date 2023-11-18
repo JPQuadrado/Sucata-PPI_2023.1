@@ -1,5 +1,5 @@
 const cepCliente = document.getElementById('cepCliente');
-const cepCoperativa = document.getElementById('cepCoperativa');
+const cepCoperativa = document.getElementById('cepCooperativa');
 let formCliente = document.getElementById('cliente');
 let formCoperativa = document.getElementById('cooperativa');
 
