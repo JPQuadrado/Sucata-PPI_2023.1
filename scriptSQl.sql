@@ -42,7 +42,7 @@ create table ponto (
 	ponto_localidade varchar(50) not null,
 	ponto_complemento varchar(50) not null,
 	ponto_logradouro varchar(50) not null,
-	user_bairro VARCHAR(50) NOT NULL,
+	ponto_bairro VARCHAR(50) NOT NULL,
 	vidro bool not null,
 	bateria bool not null,
 	metal bool not null,
