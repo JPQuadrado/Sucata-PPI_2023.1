@@ -15,6 +15,9 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- BAIXAR PACOTE DPS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
     <title>Pontos</title>
 </head>
 
@@ -69,11 +72,81 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                 echo $msg;
                 ?>
 
-                <h2 class="font-weight-bold mt-2">Listagem de pontos de coleta</h2>
-                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 text-center justify-content-center px-xl-6 aos-init aos-animate" data-aos="fade-up">
-                    <!-- USAR TABELA APRENDIDA NO TRABALHO -->
-                </div>
+                <h3 class="font-weight-bold mt-2">Listagem de pontos de coleta</h3>
+
+                <!-- USAR TABELA APRENDIDA NO TRABALHO -->
+                <?php
+                require_once "../conexao.php";
+                $conn = new Conexao();
+
+                try {
+                    $sql = <<<SQL
+                    SELECT * FROM ponto where cooperativa_id = ?
+                    SQL;
+
+                    $stmt = $conn->conexao->prepare($sql);
+                    $stmt->execute([$usuario->getEmpresa()]);
+                } catch (Exception $e) {
+                    exit('Ocorreu uma falha: ' . $e->getMessage());
+                }
+                ?>
+
+                <table id="pontos" class="table table-striped" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>CEP</th>
+                            <th>Nome</th>
+                            <th>UF</th>
+                            <th>Localidade</th>
+                            <th>Bairro</th>
+                            <th>Logradouro</th>
+                            <th>Complemento</th>
+                            <th>Vidro</th>
+                            <th>Bateria</th>
+                            <th>Metal</th>
+                            <th>Papel</th>
+                            <th>Plastico</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        while ($row = $stmt->fetch()) {
+                            $ponto_cep = htmlspecialchars($row['ponto_cep']);
+                            $ponto_nome = htmlspecialchars($row['ponto_nome']);
+                            $ponto_uf = htmlspecialchars($row['ponto_uf']);
+                            $ponto_localidade = htmlspecialchars($row['ponto_localidade']);
+                            $ponto_bairro = htmlspecialchars($row['ponto_bairro']);
+                            $ponto_logradouro = htmlspecialchars($row['ponto_logradouro']);
+                            $ponto_complemento = htmlspecialchars($row['ponto_complemento']);
+                            $vidro = htmlspecialchars($row['vidro']);
+                            $bateria = htmlspecialchars($row['bateria']);
+                            $metal = htmlspecialchars($row['metal']);
+                            $papel = htmlspecialchars($row['papel']);
+                            $plastico = htmlspecialchars($row['plastico']);
+
+                            echo <<<HTML
+                        <tr>
+                            <td>$ponto_cep</td>
+                            <td>$ponto_nome</td>
+                            <td>$ponto_uf</td>
+                            <td>$ponto_localidade</td>
+                            <td>$ponto_bairro</td>
+                            <td>$ponto_logradouro</td>
+                            <td>$ponto_complemento</td>
+                            <td>$vidro</td>
+                            <td>$bateria</td>
+                            <td>$metal</td>
+                            <td>$papel</td>
+                            <td>$plastico</td>
+                        </tr>
+                        HTML;
+                        }
+                        ?>
+                    </tbody>
+                </table>
             </div>
+
+
         </section>
 
     </main>
@@ -84,8 +157,13 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
         </div>
     </footer>
 
-    <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- BAIXAR PACOTE DPS -->
+    <script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script defer src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script defer src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script defer src="js/table.js"></script>
 
 
 </body>
