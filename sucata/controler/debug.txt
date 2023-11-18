@@ -1,15 +1,13 @@
 Array
 (
-    [nome] => Joao
-    [cnpj] => 00.000.000/0001-00
-    [tel] => (34) 00000-0000
-    [cepCooperativa] => 01001-000
-    [logradouro] => Praça da Sé
-    [bairro] => Sé
-    [localidade] => São Paulo
+    [nome] => Coleta Praça
+    [cep] => 01001-000
     [uf] => SP
-    [complemento] => 123
+    [localidade] => São Paulo
+    [bairro] => Sé
+    [logradouro] => Praça da Sé
+    [complemento] => 158
+    [bateria] => bateria
     [metal] => metal
     [papel] => papel
-    [plastico] => plastico
 )

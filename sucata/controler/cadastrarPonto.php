@@ -16,27 +16,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (isset($_POST['bateria'])) {
         $bateria = 1;
-    }else{
+    } else {
         $bateria = 0;
     }
     if (isset($_POST['metal'])) {
         $metal = 1;
-    }else{
+    } else {
         $metal = 0;
     }
     if (isset($_POST['papel'])) {
         $papel = 1;
-    }else{
+    } else {
         $papel = 0;
-    } 
+    }
     if (isset($_POST['plastico'])) {
         $plastico = 1;
-    }else{
+    } else {
         $plastico = 0;
     }
     if (isset($_POST['vidro'])) {
         $vidro = 1;
-    }else{
+    } else {
         $vidro = 0;
     }
 
@@ -56,13 +56,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // cadastrar dados fornecidos pelo usuário 
         $stmt = $conn->conexao->prepare($sql);
         $stmt->execute([
-            $ponto->getNome(), 
-            $ponto->getCep(), 
-            $ponto->getUf(),  
-            $ponto->getLocalidade(), 
-            $ponto->getComplemento(), 
-            $ponto->getLogradouro(), 
-            $ponto->getBairro(), 
+            $ponto->getNome(),
+            $ponto->getCep(),
+            $ponto->getUf(),
+            $ponto->getLocalidade(),
+            $ponto->getComplemento(),
+            $ponto->getLogradouro(),
+            $ponto->getBairro(),
             $ponto->getVidro(),
             $ponto->getBateria(),
             $ponto->getMetal(),
@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $ponto->getEmpresa()
         ]);
 
-        $message = "Obrigado por participar! Novo Ponto criado" . $ponto->getNome();
+        $message = "Obrigado por participar! Novo Ponto criado " . $ponto->getNome();
         echo json_encode($message);
         exit();
     } catch (Exception $e) {
