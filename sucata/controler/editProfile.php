@@ -30,8 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $userID = $row['user_id'];
 
         $sql = <<<SQL
-        UPDATE users SET (user_email, user_password, user_name, user_cep, user_logradouro, user_bairro, user_localidade, user_uf, user_complemento, user_tel)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) WHERE user_id = ?
+        UPDATE users SET user_email = ?, user_password = ?, user_name = ?, user_cep = ?, user_logradouro = ?, user_bairro = ?, user_localidade = ?, user_uf = ?, user_complemento = ?, user_tel = ? WHERE user_id = ?
         SQL;
 
         // Neste caso utilize prepared statements para prevenir
