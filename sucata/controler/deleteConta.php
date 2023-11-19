@@ -20,10 +20,11 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
             $stmt = $conn->conexao->prepare($sql);
             $stmt->execute([$id]);
 
-            header("location: ../listUsers/index.php");
+            session_destroy();
+            header("location: ../index.php");
             exit();
         } catch (Exception $e) {
-            header("location: ../listUsers/index.php");
+            header("location: ../index.php");
             exit('Ocorreu uma falha: ' . $e->getMessage());
         }
     }

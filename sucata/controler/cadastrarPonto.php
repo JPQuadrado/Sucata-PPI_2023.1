@@ -2,7 +2,7 @@
 require_once "../model/userClass.php";
 session_start();
 if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
-    header("Location: login.php");
+    header("Location: ../index.php");
 } else {
     $usuario = $_SESSION["usuario"];
 }

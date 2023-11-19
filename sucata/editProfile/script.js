@@ -1,8 +1,3 @@
-// function popup(){
-//     document.getElementById("popup").style.display = "block";
-
-// }
-
 function popup() {
     $('#confirmDeleteModal').modal('show');
   }
