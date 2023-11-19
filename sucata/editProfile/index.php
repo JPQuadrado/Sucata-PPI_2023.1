@@ -186,8 +186,8 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                           </div>
 
                           <div class="form-floating mb-3">
-                            <input type="password" class="form-control" name="newPassword" id="newPassword" />
-                            <label for="newPassword">Nova Senha</label>
+                            <input type="password" class="form-control" name="newPassword" id="newPassword" required/>
+                            <label for="newPassword">Repita a senha ou digite uma nova</label>
                           </div>
 
                       HTML;
