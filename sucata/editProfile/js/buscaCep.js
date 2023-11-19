@@ -1,7 +1,7 @@
 const cepCliente = document.getElementById('cep');
 let formCliente = document.getElementById('editForm');
 
-cepCliente.addEventListener('onkeyup', async function () {
+cepCliente.addEventListener('keyup', async function () {
     const response = await fetch(`https://viacep.com.br/ws/${cepCliente.value}/json/`);
 
     if (response.ok) {
