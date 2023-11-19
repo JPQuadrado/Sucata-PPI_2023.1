@@ -8,10 +8,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $conn = new Conexao();
 
+    if (!isset($_POST['newPassword'])) {
+        $password = $_POST['oldPassword'];
+    }else{
+        $password = $_POST['newPassword'];
+    }
 
     // public function __construct($email, $password, $name, $cep, $logradouro, $bairro, $localidade, $uf, $complemento, $cpf, $tel, $empresa)
 
-    $user = new userClass($_POST['email'], $_POST['senha'], $_POST['nome'], $_POST['cepCliente'], $_POST['logradouro'], $_POST['bairro'], $_POST['localidade'], $_POST['uf'], $_POST['complemento'], $_POST['cpf'], $_POST['tel'], $_POST['empresa']);
+    $user = new userClass($_POST['email'], $password, $_POST['nome'], $_POST['cep'], $_POST['logradouro'], $_POST['bairro'], $_POST['localidade'], $_POST['uf'], $_POST['complemento'], $_POST['cpf'], $_POST['tel'], $_POST['empresa']);
 
     try {
 
