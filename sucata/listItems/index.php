@@ -65,14 +65,13 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
 
         <section class="mt-3 py-6 bg-light-primary">
             <div class="container">
-
                 <?php
-                $msg = "<p class='col-lg-10 fs-4 mt-2 pt-5'> Seja bem vindo " . $usuario->getName() . "</p>";
+                $msg = "<p class='col-lg-10 fs-4 mt-2 pt-5'> Seja bem vindo, " . $usuario->getName() . "</p>";
 
                 echo $msg;
                 ?>
 
-                <h3 class="font-weight-bold mt-2">Listagem de pontos de coleta</h3>
+                <p class='col-lg-10 fs-4 pt-2'>Ponto de Coleta</p>
 
                 <!-- USAR TABELA APRENDIDA NO TRABALHO -->
                 <?php
