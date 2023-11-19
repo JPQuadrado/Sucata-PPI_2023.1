@@ -42,9 +42,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $conn = new Conexao();
 
-    $ponto = new pontoClass($_POST['nome'], $_POST['cep'], $_POST['uf'], $_POST['localidade'], $_POST['complemento'], $_POST['logradouro'], $_POST['bairro'], $vidro, $bateria, $metal, $papel, $plastico, $usuario->getEmpresa());
-
     try {
+
+        $sql1 = <<<SQL
+        select vidro, bateria, metal, papel, plastico from cooperativa where cooperativa_id = ?
+        SQL;
+
+        $stmt1 = $conn->conexao->prepare($sql1);
+        $stmt1->execute([$usuario->getEmpresa()]);
+        $row = $stmt1->fetch();
+
+        $vres = $row['vidro'];
+        $bres = $row['bateria'];
+        $mres = $row['metal'];
+        $pares = $row['papel'];
+        $plres = $row['plastico'];
+
+        if ($vres == 0){
+            $vidro = 0;
+        }
+        if ($bres == 0){
+            $bateria = 0;
+        }
+        if ($mres == 0){
+            $metal = 0;
+        }
+        if ($pares == 0){
+            $papel = 0;
+        }
+        if ($plres == 0){
+            $plastico = 0;
+        }
+
+        $ponto = new pontoClass($_POST['nome'], $_POST['cep'], $_POST['uf'], $_POST['localidade'], $_POST['complemento'], $_POST['logradouro'], $_POST['bairro'], $vidro, $bateria, $metal, $papel, $plastico, $usuario->getEmpresa());
 
         $sql = <<<SQL
         INSERT INTO ponto (ponto_nome, ponto_cep, ponto_uf, ponto_localidade, ponto_complemento, ponto_logradouro, ponto_bairro, vidro, bateria, metal, papel, plastico, cooperativa_id)
