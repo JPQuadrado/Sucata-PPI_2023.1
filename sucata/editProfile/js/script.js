@@ -16,11 +16,6 @@ $('#editForm').submit((e) => {
     var form = $('#editForm'); // Store the jQuery form object
     var formData = new FormData(form[0]); // Pass the DOM element to FormData
 
-    // Log each key-value pair from formData
-    formData.forEach((value, key) => {
-        console.log(key, value);
-    });
-
     $.ajax({
         url: '/sucata/controler/editProfile.php',
         method: 'POST',
@@ -35,7 +30,6 @@ $('#editForm').submit((e) => {
             $('.result').empty().prepend(errorMessage);
         }
     }).done(function (result) {
-        console.log(formData)
     });
 
 });
