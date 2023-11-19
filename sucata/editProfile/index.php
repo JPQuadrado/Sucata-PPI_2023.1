@@ -110,27 +110,77 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                   echo <<<HTML
                           <div class="card-body">
                           <div class="form-floating mb-3">
-                            <input value="$usuario->getName()" type="text" id="nome" class="form-control" placeholder="nmaxwell">
+                            <input value="{$usuario->getName()}" type="text" id="nome" class="form-control" placeholder="nmaxwell">
                             <label for="nome">Nome</label>
                           </div>
                           <div class="form-floating mb-3">
-                            <input value="$usuario->getCpf()" type="text" id="cpf" class="form-control" placeholder="000.000.000-00">
+                            <input value="{$usuario->getCpf()}" type="text" id="cpf" class="form-control" placeholder="000.000.000-00" readonly>
                             <label for="cpf">CPF</label>
                           </div>
                           <div class="form-floating mb-3">
-                            <input value="$usuario->getEmail()" type="email" id="email" class="form-control" placeholder="nmaxwell@mail.com">
+                            <input value="{$usuario->getEmail()}" type="email" id="email" class="form-control" placeholder="nmaxwell@mail.com">
                             <label for="email">E-mail</label>
                           </div>
                           <div class="form-floating mb-3">
-                            <input value="$usuario->getTel()" type="text" id="tel" class="form-control" placeholder="(00) 00000-0000">
+                            <input value="{$usuario->getTel()}" type="text" id="tel" class="form-control" placeholder="(00) 00000-0000">
                             <label for="tel">Telefone</label>
                           </div>
                           <div class="form-floating mb-3">
-                            <input value="$usuario->getCep()" type="text" id="cep" class="form-control" placeholder="00000-000">
+                            <input value="{$usuario->getCep()}" type="text" id="cep" class="form-control" placeholder="00000-000">
                             <label for="cep">CEP</label>
                           </div>
+                          <div class="form-floating mb-3 col-lg-3">
+                                <input type="text"
+                                    class="form-control" id="logradouro"
+                                    name="logradouro"
+                                    value
+                                    placeholder
+                                    required readonly>
+                                <label for="logradouro">Logradouro</label>
+                            </div>
+
+                            <div class="form-floating mb-3 col-lg-3">
+                                <input type="text"
+                                    class="form-control" id="bairro"
+                                    name="bairro"
+                                    value
+                                    placeholder
+                                    required readonly>
+                                <label for="bairro">Bairro</label>
+                            </div>
+
+                            <div class="form-floating mb-3 col-lg-3">
+                                <input type="text"
+                                    class="form-control" id="localidade"
+                                    name="localidade"
+                                    value
+                                    placeholder
+                                    required readonly>
+                                <label for="localidade">Localidade</label>
+                            </div>
+
+                            <div class="form-floating mb-3 col-lg-1">
+                                <input type="text"
+                                    class="form-control" id="uf"
+                                    name="uf"
+                                    value
+                                    placeholder
+                                    required readonly>
+                                <label for="uf">UF</label>
+                            </div>
+
+                            <div class="form-floating mb-3 col-lg-2">
+                                <input type="text"
+                                    class="form-control" id="complemento"
+                                    name="complemento"
+                                    value="{$usuario->getComplemento()}"
+                                    placeholder
+                                    required>
+                                <label for="complemento">Complemento</label>
+                            </div>
+
                           <div class="form-floating mb-3">
-                            <input value="$usuario->getEmpresa()" type="text" id="empresa" class="form-control" placeholder="Company Ltd.">
+                            <input value="{$usuario->getEmpresa()}" type="text" id="empresa" class="form-control" placeholder="Company Ltd." readonly>
                             <label for="empresa">Empresa</label>
                           </div>
 
@@ -138,7 +188,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="oldPassword">Senha Antiga</label>
-                                <input value="$usuario->getPassword()" type="password" class="form-control" id="oldPassword" />
+                                <input value="{$usuario->getPassword()}" type="password" class="form-control" id="oldPassword" />
                               </div>
                               <div class="form-group">
                                 <label for="newPassword">Nova Senha</label>
@@ -174,7 +224,8 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
 
   <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
   <script defer src="../jquery-3.7.1.min.js"></script>
-  <script defer src="script.js"></script>
+  <script defer src="js/script.js"></script>
+  <script defer src="js/buscaCep.js"></script>
 </body>
 
 </html>

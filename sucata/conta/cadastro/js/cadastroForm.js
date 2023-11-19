@@ -25,7 +25,6 @@ $('#cliente').submit((e) => {
         }
     }).done(function (result) {
         console.log(formData)
-        // Your additional code here, if any
     });
 
 
@@ -69,7 +68,6 @@ $('#cooperativa').submit((e) => {
         }
     }).done(function (result) {
         console.log(formData)
-        // Your additional code here, if any
     });
 
 });
