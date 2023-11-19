@@ -3,8 +3,8 @@ git:  https://github.com/JPQuadrado/Sucata-PPI_2023.1
 
 Integrantes:
 João Pedro Corrêa de Melo Mendes - 12111BSI200
-Vinicius Freitas Venunes de Souza - 12111BSI210
 Pedro Henrique Albino Leão - 11921BSI226
+Vinicius Freitas Venunes de Souza - 12111BSI210
 
 -- Acessos:
 Professor, para  acessar existem varios usuários possiveis.
