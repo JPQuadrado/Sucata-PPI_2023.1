@@ -49,13 +49,10 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                             <a class="nav-link active" aria-current="page" href="/sucata/registerItem/">Cadastrar Pontos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/sucata/listItems/">Pontos</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/sucata/editProfile/">Configurações</a>
                         </li>
                     </ul>
-                    <a href="/sucata/" role="button" class="btn btn-outline-danger m-lg-2">Sair</a>
+                    <a href="../controler/sair.php" role="button" class="btn btn-outline-danger m-lg-2">Sair</a>
                 </div>
             </div>
         </nav>
@@ -105,11 +102,13 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                             <th>Metal</th>
                             <th>Papel</th>
                             <th>Plastico</th>
+                            <th>Deletar</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
                         while ($row = $stmt->fetch()) {
+                            $ponto_id = htmlspecialchars($row['ponto_id']);
                             $ponto_cep = htmlspecialchars($row['ponto_cep']);
                             $ponto_nome = htmlspecialchars($row['ponto_nome']);
                             $ponto_uf = htmlspecialchars($row['ponto_uf']);
@@ -167,6 +166,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                             <td>$msgMetal</td>
                             <td>$msgPapel</td>
                             <td>$msgPlastico</td>
+                            <td><a href="../controler/deletePonto.php?id=$ponto_id" id="delete">&#10060;</a></td>                            
                         </tr>
                         HTML;
                         }

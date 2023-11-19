@@ -2,7 +2,7 @@
 require_once "../model/userClass.php";
 session_start();
 if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
-    header("Location: ../index.php");
+    header("Location: ../index.html");
 } else {
     $usuario = $_SESSION["usuario"];
 }
@@ -58,19 +58,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $pares = $row['papel'];
         $plres = $row['plastico'];
 
-        if ($vres == 0){
+        if ($vres == 0) {
             $vidro = 0;
         }
-        if ($bres == 0){
+        if ($bres == 0) {
             $bateria = 0;
         }
-        if ($mres == 0){
+        if ($mres == 0) {
             $metal = 0;
         }
-        if ($pares == 0){
+        if ($pares == 0) {
             $papel = 0;
         }
-        if ($plres == 0){
+        if ($plres == 0) {
             $plastico = 0;
         }
 

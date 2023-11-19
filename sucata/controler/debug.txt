@@ -1,15 +1,12 @@
 Array
 (
-    [nome] => Deletador de Colegas
-    [empresa] => 1
-    [cpf] => 123.157.856-76
-    [tel] => (34) 00000-0000
-    [cepCliente] => 38413-225
-    [logradouro] => Rua José de Paula Galvão
-    [bairro] => Planalto
-    [localidade] => Uberlândia
-    [uf] => MG
-    [complemento] => 1580
-    [email] => deleta@cliente.com
-    [senha] => 123
+    [nome] => NewTech Computadores
+    [cep] => 01002-902
+    [uf] => SP
+    [localidade] => São Paulo
+    [bairro] => Sé
+    [logradouro] => Rua Direita
+    [complemento] => 587
+    [bateria] => bateria
+    [metal] => metal
 )

@@ -1,5 +1,5 @@
-new DataTable('#pontos');
+// new DataTable('#pontosBusca');
 
-$(document).ready(function() {
-    $('#example').DataTable();
+$(document).ready(function () {
+    $('#pontosBusca').DataTable();
 });

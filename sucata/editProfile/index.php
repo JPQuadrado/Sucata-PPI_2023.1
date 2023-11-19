@@ -47,9 +47,6 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
               <a class="nav-link active" aria-current="page" href="/sucata/registerItem/">Cadastrar Pontos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/sucata/listItems/">Pontos</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/sucata/editProfile/">Configurações</a>
             </li>
           </ul>
@@ -64,7 +61,6 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
     <div class="container light-style flex-grow-1 container-p-y">
 
       <h4 class="font-weight-bold py-3 mb-4">
-        Configurações da Conta
       </h4>
 
       <div class="card overflow-hidden">
@@ -184,18 +180,16 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                             <label for="empresa">Empresa</label>
                           </div>
 
-                          <div class="row mb-4">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="oldPassword">Senha Antiga</label>
-                                <input value="{$usuario->getPassword()}" type="password" class="form-control" id="oldPassword" readonly name="oldPassword" />
-                              </div>
-                              <div class="form-group">
-                                <label for="newPassword">Nova Senha</label>
-                                <input type="password" class="form-control" name="newPassword" id="newPassword" />
-                              </div>
-                            </div>
+                          <div class="form-floating mb-3">
+                            <input value="{$usuario->getPassword()}" type="password" class="form-control" id="oldPassword" readonly name="oldPassword" />
+                            <label for="oldPassword">Senha Antiga</label>
                           </div>
+
+                          <div class="form-floating mb-3">
+                            <input type="password" class="form-control" name="newPassword" id="newPassword" />
+                            <label for="newPassword">Nova Senha</label>
+                          </div>
+
                       HTML;
                   ?>
               </div>
@@ -209,7 +203,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                 </ul>
               </div> -->
             </div>
-            <button type="submit" class="btn btn-primary" id="editForm">Salvar</button>
+            <button type="submit" class="btn btn-primary mb-5" id="editForm">Salvar</button>
             </form>
           </div>
         </div>

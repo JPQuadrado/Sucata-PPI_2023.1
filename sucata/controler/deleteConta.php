@@ -2,7 +2,7 @@
 require_once "../model/userClass.php";
 session_start();
 if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
-    header("Location: ../index.php");
+    header("Location: ../index.html");
 } else {
     $usuario = $_SESSION["usuario"];
 
@@ -21,10 +21,10 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
             $stmt->execute([$id]);
 
             session_destroy();
-            header("location: ../index.php");
+            header("location: ../index.html");
             exit();
         } catch (Exception $e) {
-            header("location: ../index.php");
+            header("location: ../index.html");
             exit('Ocorreu uma falha: ' . $e->getMessage());
         }
     }

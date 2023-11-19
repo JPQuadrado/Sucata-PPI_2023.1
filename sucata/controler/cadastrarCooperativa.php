@@ -8,27 +8,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (isset($_POST['bateria'])) {
         $bateria = 1;
-    }else{
+    } else {
         $bateria = 0;
     }
     if (isset($_POST['metal'])) {
         $metal = 1;
-    }else{
+    } else {
         $metal = 0;
     }
     if (isset($_POST['papel'])) {
         $papel = 1;
-    }else{
+    } else {
         $papel = 0;
-    } 
+    }
     if (isset($_POST['plastico'])) {
         $plastico = 1;
-    }else{
+    } else {
         $plastico = 0;
     }
     if (isset($_POST['vidro'])) {
         $vidro = 1;
-    }else{
+    } else {
         $vidro = 0;
     }
 
@@ -48,15 +48,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // cadastrar dados fornecidos pelo usuário 
         $stmt = $conn->conexao->prepare($sql);
         $stmt->execute([
-            $cooperativa->getName(), 
-            $cooperativa->getCnpj(), 
-            $cooperativa->getCep(), 
-            $cooperativa->getLogradouro(), 
-            $cooperativa->getBairro(), 
-            $cooperativa->getLocalidade(), 
-            $cooperativa->getUf(), 
-            $cooperativa->getComplemento(), 
-            $cooperativa->getTel(), 
+            $cooperativa->getName(),
+            $cooperativa->getCnpj(),
+            $cooperativa->getCep(),
+            $cooperativa->getLogradouro(),
+            $cooperativa->getBairro(),
+            $cooperativa->getLocalidade(),
+            $cooperativa->getUf(),
+            $cooperativa->getComplemento(),
+            $cooperativa->getTel(),
             $cooperativa->getVidro(),
             $cooperativa->getBateria(),
             $cooperativa->getMetal(),
@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute([$cooperativa->getCnpj()]);
         $row = $stmt->fetch();
 
-        $message = "Obrigado por participar! Seja bem vinda " . $cooperativa->getName() . ", o codigo para cadestro de funcionarios é: ". $row['cooperativa_id'] . ". Não o perca sem ele não será possivel cadastrar novos funcionarios.";
+        $message = "Obrigado por participar! Seja bem vinda " . $cooperativa->getName() . ", o codigo para cadastro de funcionarios é: " . $row['cooperativa_id'] . ". Não o percas, sem em ele não será possivel cadastrar novos funcionarios.";
         echo json_encode($message);
         exit();
     } catch (Exception $e) {

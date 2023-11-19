@@ -50,13 +50,10 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
               <a class="nav-link active" aria-current="page" href="/sucata/registerItem/">Cadastrar Pontos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/sucata/listItems/">Pontos</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/sucata/editProfile/">Configurações</a>
             </li>
           </ul>
-          <a href="/sucata/" role="button" class="btn btn-outline-danger m-lg-2">Sair</a>
+          <a href="../controler/sair.php" role="button" class="btn btn-outline-danger m-lg-2">Sair</a>
         </div>
       </div>
     </nav>

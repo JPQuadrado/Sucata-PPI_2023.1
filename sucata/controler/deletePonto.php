@@ -14,16 +14,16 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
 
         try {
             $sql = <<<SQL
-            DELETE FROM users WHERE user_id = ?
+            DELETE FROM ponto WHERE ponto_id = ?
             SQL;
 
             $stmt = $conn->conexao->prepare($sql);
             $stmt->execute([$id]);
 
-            header("location: ../listUsers/index.php");
+            header("location: ../listItems/index.php");
             exit();
         } catch (Exception $e) {
-            header("location: ../listUsers/index.php");
+            header("location: ../listItems/index.php");
             exit('Ocorreu uma falha: ' . $e->getMessage());
         }
     }
