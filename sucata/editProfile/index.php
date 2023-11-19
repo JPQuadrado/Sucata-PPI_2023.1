@@ -110,26 +110,26 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                   echo <<<HTML
                           <div class="card-body">
                           <div class="form-floating mb-3">
-                            <input value="{$usuario->getName()}" type="text" id="nome" class="form-control" placeholder="nmaxwell">
+                            <input value="{$usuario->getName()}" type="text" id="nome" class="form-control" placeholder name="nome">
                             <label for="nome">Nome</label>
                           </div>
                           <div class="form-floating mb-3">
-                            <input value="{$usuario->getCpf()}" type="text" id="cpf" class="form-control" placeholder="000.000.000-00" readonly>
+                            <input value="{$usuario->getCpf()}" type="text" id="cpf" class="form-control" placeholder name="cpf" readonly>
                             <label for="cpf">CPF</label>
                           </div>
                           <div class="form-floating mb-3">
-                            <input value="{$usuario->getEmail()}" type="email" id="email" class="form-control" placeholder="nmaxwell@mail.com">
+                            <input value="{$usuario->getEmail()}" type="email" id="email" class="form-control" placeholder name="email">
                             <label for="email">E-mail</label>
                           </div>
                           <div class="form-floating mb-3">
-                            <input value="{$usuario->getTel()}" type="text" id="tel" class="form-control" placeholder="(00) 00000-0000">
+                            <input value="{$usuario->getTel()}" type="text" id="tel" class="form-control" placeholder name="tel">
                             <label for="tel">Telefone</label>
                           </div>
                           <div class="form-floating mb-3">
-                            <input value="{$usuario->getCep()}" type="text" id="cep" class="form-control" placeholder="00000-000">
+                            <input name="cep" value="{$usuario->getCep()}" type="text" id="cep" class="form-control" placeholder>
                             <label for="cep">CEP</label>
                           </div>
-                          <div class="form-floating mb-3 col-lg-3">
+                          <div class="form-floating mb-3">
                                 <input type="text"
                                     class="form-control" id="logradouro"
                                     name="logradouro"
@@ -139,7 +139,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                                 <label for="logradouro">Logradouro</label>
                             </div>
 
-                            <div class="form-floating mb-3 col-lg-3">
+                            <div class="form-floating mb-3">
                                 <input type="text"
                                     class="form-control" id="bairro"
                                     name="bairro"
@@ -149,7 +149,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                                 <label for="bairro">Bairro</label>
                             </div>
 
-                            <div class="form-floating mb-3 col-lg-3">
+                            <div class="form-floating mb-3">
                                 <input type="text"
                                     class="form-control" id="localidade"
                                     name="localidade"
@@ -159,7 +159,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                                 <label for="localidade">Localidade</label>
                             </div>
 
-                            <div class="form-floating mb-3 col-lg-1">
+                            <div class="form-floating mb-3">
                                 <input type="text"
                                     class="form-control" id="uf"
                                     name="uf"
@@ -169,7 +169,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                                 <label for="uf">UF</label>
                             </div>
 
-                            <div class="form-floating mb-3 col-lg-2">
+                            <div class="form-floating mb-3">
                                 <input type="text"
                                     class="form-control" id="complemento"
                                     name="complemento"
@@ -188,7 +188,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                             <div class="col-md-6">
                               <div class="form-group">
                                 <label for="oldPassword">Senha Antiga</label>
-                                <input value="{$usuario->getPassword()}" type="password" class="form-control" id="oldPassword" />
+                                <input value="{$usuario->getPassword()}" type="password" class="form-control" id="oldPassword" readonly name="oldPassword" />
                               </div>
                               <div class="form-group">
                                 <label for="newPassword">Nova Senha</label>
@@ -199,7 +199,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                       HTML;
                   ?>
               </div>
-              <div class="col-md-6">
+              <!-- <div class="col-md-6">
                 <p class="mb-2">Melhorando a senha</p>
                 <p class="small text-muted mb-2">Para criar uma nova senha, tenha em mente as boas praticas a seguir:</p>
                 <ul class="small text-muted pl-4 mb-0">
@@ -207,7 +207,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                   <li>Pelo menos um caracter especial</li>
                   <li>Pelo menos um número</li>
                 </ul>
-              </div>
+              </div> -->
             </div>
             <button type="submit" class="btn btn-primary" id="editForm">Salvar</button>
             </form>
