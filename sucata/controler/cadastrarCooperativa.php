@@ -64,7 +64,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $cooperativa->getPlastico()
         ]);
 
-        $message = "Obrigado por participar! Seja bem vinda " . $cooperativa->getName();
+        $sql = <<<SQL
+        SELECT cooperativa_id from cooperativa where cooperativa_cnpj = ?
+        SQL;
+
+        $stmt = $conn->conexao->prepare($sql);
+        $stmt->execute([$cooperativa->getCnpj()]);
+        $row = $stmt->fetch();
+
+        $message = "Obrigado por participar! Seja bem vinda " . $cooperativa->getName() . ", o codigo para cadestro de funcionarios é: ". $row['cooperativa_id'] . ". Não o perca sem ele não será possivel cadastrar novos funcionarios.";
         echo json_encode($message);
         exit();
     } catch (Exception $e) {
