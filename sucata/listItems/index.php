@@ -124,6 +124,36 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                             $papel = htmlspecialchars($row['papel']);
                             $plastico = htmlspecialchars($row['plastico']);
 
+                            if ($vidro == 1) {
+                                $msgVidro = "&#128309;";
+                            } else {
+                                $msgVidro = "&#128308;";
+                            }
+
+                            if ($bateria == 1) {
+                                $msgBateria = "&#128309;";
+                            } else {
+                                $msgBateria = "&#128308;";
+                            }
+
+                            if ($metal == 1) {
+                                $msgMetal = "&#128309;";
+                            } else {
+                                $msgMetal = "&#128308;";
+                            }
+
+                            if ($papel == 1) {
+                                $msgPapel = "&#128309;";
+                            } else {
+                                $msgPapel = "&#128308;";
+                            }
+
+                            if ($plastico == 1) {
+                                $msgPlastico = "&#128309;";
+                            } else {
+                                $msgPlastico = "&#128308;";
+                            }
+
                             echo <<<HTML
                         <tr>
                             <td>$ponto_cep</td>
@@ -133,11 +163,11 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                             <td>$ponto_bairro</td>
                             <td>$ponto_logradouro</td>
                             <td>$ponto_complemento</td>
-                            <td>$vidro</td>
-                            <td>$bateria</td>
-                            <td>$metal</td>
-                            <td>$papel</td>
-                            <td>$plastico</td>
+                            <td>$msgVidro</td>
+                            <td>$msgBateria</td>
+                            <td>$msgMetal</td>
+                            <td>$msgPapel</td>
+                            <td>$msgPlastico</td>
                         </tr>
                         HTML;
                         }
