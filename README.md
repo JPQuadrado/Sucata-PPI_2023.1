@@ -3,7 +3,9 @@ Repositório para o trabalho final da matéria de Programação Para Internet (P
 
 ## Integrantes do Grupo
 João Pedro Corrêa de Melo Mendes - 12111BSI200
+
 Pedro Henrique Albino Leão - 11921BSI226
+
 Vinicius Freitas Venunes de Souza - 12111BSI210
 
 
