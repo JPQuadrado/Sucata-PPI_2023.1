@@ -1,1 +1,21 @@
-http://joaomendes.rf.gd/
+site: http://joaomendes.rf.gd/sucata
+
+-- Acessos:
+Professor, para  acessar existem varios usuários possiveis.
+Como o banco possui atualmente 4 cooperativas, vou passar acessos por cooperativas.
+
+Cooperativa 1:
+    usuario: brundof@gmail.com
+    senha:   123
+
+Cooperativa 2:
+    usuario: mariam@gmail.com
+    senha:   123
+
+Cooperativa 3:
+    usuario: kevinm@gmail.com
+    senha:   123
+
+Cooperativa 4:
+    usuario: paulovt@gmail.com
+    senha:   123

@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $conn = new Conexao();
 
-    if (!isset($_POST['newPassword'])) {
+    if (!isset($_POST['newPassword']) || $_POST['newPassword'] == "\0") {
         $password = $_POST['oldPassword'];
     } else {
         $password = $_POST['newPassword'];
@@ -49,6 +49,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $user->getEmail(), $user->getPassword(), $user->getName(), $user->getTel(), $userID
             ]);
 
+            $usuario->reload($conn);
+
             $message = "Atualização realizada com sucesso!!";
             echo json_encode($message);
             exit();
@@ -78,6 +80,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->execute([
                 $user->getEmail(), $user->getPassword(), $user->getName(), $user->getCep(), $user->getLogradouro(), $user->getBairro(), $user->getLocalidade(), $user->getUf(), $user->getComplemento(), $user->getTel(), $userID
             ]);
+
+            $usuario->reload($conn);
 
             $message = "Atualização realizada com sucesso!!";
             echo json_encode($message);
