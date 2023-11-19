@@ -77,11 +77,11 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
 
           try {
             $sql = <<<SQL
-            SELECT * FROM users where cooperativa_id = ?
+            SELECT * FROM users where cooperativa_id = ? and user_cpf != ?
             SQL;
 
             $stmt = $conn->conexao->prepare($sql);
-            $stmt->execute([$usuario->getEmpresa()]);
+            $stmt->execute([$usuario->getEmpresa(), $usuario->getCpf()]);
           } catch (Exception $e) {
             exit('Ocorreu uma falha: ' . $e->getMessage());
           }
@@ -122,7 +122,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                     <td>$user_bairro</td>
                     <td>$user_email</td>
                     <td>$user_tel</td>
-                    <td><a href="../controler/deleteUser.php?user_cpf=$user_id" id="delete">&#10060;</a></td>
+                    <td><a href="../controler/deleteUser.php?id=$user_id" id="delete">&#10060;</a></td>
                 </tr>
                 HTML;
               }

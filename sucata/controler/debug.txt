@@ -1,12 +1,15 @@
 Array
 (
-    [nome] => Coleta Atleta
-    [cep] => 38413-228
-    [uf] => MG
-    [localidade] => Uberlândia
+    [nome] => Deletador de Colegas
+    [empresa] => 1
+    [cpf] => 123.157.856-76
+    [tel] => (34) 00000-0000
+    [cepCliente] => 38413-225
+    [logradouro] => Rua José de Paula Galvão
     [bairro] => Planalto
-    [logradouro] => Rua do Atleta
-    [complemento] => Passarela - Uchoa
-    [plastico] => plastico
-    [vidro] => vidro
+    [localidade] => Uberlândia
+    [uf] => MG
+    [complemento] => 1580
+    [email] => deleta@cliente.com
+    [senha] => 123
 )
