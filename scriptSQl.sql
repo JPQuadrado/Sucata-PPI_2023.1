@@ -1,7 +1,7 @@
 create table cooperativa (
 	cooperativa_id int primary key AUTO_INCREMENT,
 	cooperativa_name varchar(50) not null,
-	cooperativa_cnpj varchar(50) not null,
+	cooperativa_cnpj varchar(50) not null unique,
 	cooperativa_cep varchar(50) not null,
 	cooperativa_bairro varchar(50) not null,
 	cooperativa_logradouro varchar(50) not null,
@@ -18,7 +18,7 @@ create table cooperativa (
 
 CREATE TABLE users (
     user_id INT PRIMARY KEY AUTO_INCREMENT,
-    user_email VARCHAR(50) NOT NULL,
+    user_email VARCHAR(50) NOT NULL unique,
     user_password VARCHAR(50) NOT NULL,
     user_name VARCHAR(50) NOT NULL,
     user_cep VARCHAR(50) NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE users (
     user_localidade VARCHAR(50) NOT NULL,
     user_uf VARCHAR(2) NOT NULL,
     user_complemento VARCHAR(50) NOT NULL,
-    user_cpf VARCHAR(50) NOT NULL,
+    user_cpf VARCHAR(50) NOT NULL unique,
     user_tel VARCHAR(50) NOT NULL,
     user_photo BLOB,
     cooperativa_id INT NOT NULL,
