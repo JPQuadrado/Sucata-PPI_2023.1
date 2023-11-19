@@ -67,8 +67,6 @@
 
     <!-- Resultados -->
     <div class="container px-5 py-5" id="featured-3">
-        <h3 class="pb-2 border-bottom">Resultados</h3>
-        
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["cep"])){
                 require_once "../conexao.php";
