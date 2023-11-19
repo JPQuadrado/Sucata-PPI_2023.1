@@ -1,12 +1,16 @@
 Array
 (
-    [nome] => NewTech Computadores
-    [cep] => 01002-902
-    [uf] => SP
-    [localidade] => São Paulo
-    [bairro] => Sé
-    [logradouro] => Rua Direita
-    [complemento] => 587
-    [bateria] => bateria
-    [metal] => metal
+    [nome] => Flavia Miranda
+    [cpf] => 023.222.111-04
+    [email] => flaviam@outlook.com
+    [tel] => (34) 98745-2203
+    [cep] => 38413-225
+    [logradouro] => Rua José de Paula Galvão
+    [bairro] => Planalto
+    [localidade] => Uberlândia
+    [uf] => MG
+    [complemento] => 600
+    [empresa] => 2
+    [oldPassword] => 123
+    [newPassword] => 
 )

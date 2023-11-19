@@ -47,6 +47,43 @@ class userClass
         $this->empresa = $empresa;
     }
 
+    public function reload($conn)
+    {
+        session_start();
+
+        $sql = "SELECT * FROM users WHERE user_cpf = ?";
+        $stmt = $conn->conexao->prepare($sql);
+
+        $stmt->execute([$this->getCpf()]);
+
+        // UPDATE users SET user_email = ?, user_password = ?, user_name = ?, user_tel = ? WHERE user_id = ?
+
+        while ($row = $stmt->fetch()) {
+            $user_name = htmlspecialchars($row['user_name']);
+            $user_uf = htmlspecialchars($row['user_uf']);
+            $user_localidade = htmlspecialchars($row['user_localidade']);
+            $user_bairro = htmlspecialchars($row['user_bairro']);
+            $user_email = htmlspecialchars($row['user_email']);
+            $user_tel = htmlspecialchars($row['user_tel']);
+            $user_password = htmlspecialchars($row['user_password']);
+            $user_cep = htmlspecialchars($row['user_cep']);
+        }
+
+        $usuario = $_SESSION['usuario'];
+
+        $usuario->setName($user_name);
+        $usuario->setUf($user_uf);
+        $usuario->setLocalidade($user_localidade);
+        $usuario->setBairro($user_bairro);
+        $usuario->setEmail($user_email);
+        $usuario->setTel($user_tel);
+        $usuario->setPassword($user_password);
+        $usuario->setCep($user_cep);
+
+        $_SESSION["login"] = "1";
+        $_SESSION['usuario'] = $usuario;
+    }
+
     public function getEmail()
     {
         return $this->email;
