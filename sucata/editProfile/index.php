@@ -105,78 +105,65 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
             <div class="tab-content">
               <div class="tab-pane fade active show" id="account-general">
 
-                <div class="card-body media align-items-center">
-                  <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="d-block ui-w-80">
-                  <div class="media-body ml-4">
-                    <label class="btn btn-outline-primary">
-                      Carregar nova foto
-                      <input type="file" class="account-settings-fileinput">
-                    </label> &nbsp;
-                    <button type="button" class="btn btn-default md-btn-flat">Reset</button>
+                <form id="editForm" action="#" enctype="application/x-www-form-urlencoded">
+                  <?php
+                  echo <<<HTML
+                          <div class="card-body">
+                          <div class="form-floating mb-3">
+                            <input value="$usuario->getName()" type="text" id="nome" class="form-control" placeholder="nmaxwell">
+                            <label for="nome">Nome</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input value="$usuario->getCpf()" type="text" id="cpf" class="form-control" placeholder="000.000.000-00">
+                            <label for="cpf">CPF</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input value="$usuario->getEmail()" type="email" id="email" class="form-control" placeholder="nmaxwell@mail.com">
+                            <label for="email">E-mail</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input value="$usuario->getTel()" type="text" id="tel" class="form-control" placeholder="(00) 00000-0000">
+                            <label for="tel">Telefone</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input value="$usuario->getCep()" type="text" id="cep" class="form-control" placeholder="00000-000">
+                            <label for="cep">CEP</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <input value="$usuario->getEmpresa()" type="text" id="empresa" class="form-control" placeholder="Company Ltd.">
+                            <label for="empresa">Empresa</label>
+                          </div>
 
-                    <div class="text-light small mt-1">Allowed JPG, GIF or PNG. Max size of 800K</div>
-                  </div>
-                </div>
-                <hr class="border-light m-0">
-
-
-
-                <div class="card-body">
-                  <div class="form-floating mb-3">
-                    <input type="text" id="Nome" class="form-control" placeholder="nmaxwell">
-                    <label for="Nome">Nome</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="text" id="CPF" class="form-control" placeholder="000.000.000-00">
-                    <label for="CPF">CPF</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="email" id="Email" class="form-control" placeholder="nmaxwell@mail.com">
-                    <label for="Email">E-mail</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="text" id="Telefone" class="form-control" placeholder="(00) 00000-0000">
-                    <label for="Telefone">Telefone</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="text" id="CEP" class="form-control" placeholder="00000-000">
-                    <label for="CEP">CEP</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="text" id="Empresa" class="form-control" placeholder="Company Ltd.">
-                    <label for="Empresa">Empresa</label>
-                  </div>
-
-                  <div class="row mb-4">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="inputPassword4">Senha Antiga</label>
-                        <input type="password" class="form-control" id="inputPassword5" />
-                      </div>
-                      <div class="form-group">
-                        <label for="inputPassword5">Nova Senha</label>
-                        <input type="password" class="form-control" id="inputPassword5" />
-                      </div>
-                      <div class="form-group">
-                        <label for="inputPassword6">Confirmar Senha</label>
-                        <input type="password" class="form-control" id="inputPassword6" />
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <p class="mb-2">Melhorando a senha</p>
-                      <p class="small text-muted mb-2">Para criar uma nova senha, tenha em mente as boas praticas a seguir:</p>
-                      <ul class="small text-muted pl-4 mb-0">
-                        <li>Mínimo 8 caracteres</li>
-                        <li>Pelo menos um caracter especial</li>
-                        <li>Pelo menos um número</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Save Change</button>
-                  </form>
-                </div>
+                          <div class="row mb-4">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="oldPassword">Senha Antiga</label>
+                                <input value="$usuario->getPassword()" type="password" class="form-control" id="oldPassword" />
+                              </div>
+                              <div class="form-group">
+                                <label for="newPassword">Nova Senha</label>
+                                <input type="password" class="form-control" name="newPassword" id="newPassword" />
+                              </div>
+                            </div>
+                          </div>
+                      HTML;
+                  ?>
+              </div>
+              <div class="col-md-6">
+                <p class="mb-2">Melhorando a senha</p>
+                <p class="small text-muted mb-2">Para criar uma nova senha, tenha em mente as boas praticas a seguir:</p>
+                <ul class="small text-muted pl-4 mb-0">
+                  <li>Mínimo 8 caracteres</li>
+                  <li>Pelo menos um caracter especial</li>
+                  <li>Pelo menos um número</li>
+                </ul>
               </div>
             </div>
+            <button type="submit" class="btn btn-primary" id="editForm">Salvar</button>
+            </form>
+          </div>
+        </div>
+      </div>
   </main>
 
   <footer class="footer mt-auto py-3 bg-body-tertiary fixed-bottom">
