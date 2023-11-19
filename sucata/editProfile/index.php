@@ -180,7 +180,7 @@ if (!isset($_SESSION["login"]) || $_SESSION["login"] != "1") {
                             </div>
 
                           <div class="form-floating mb-3">
-                            <input value="{$usuario->getEmpresa()}" type="text" id="empresa" class="form-control" placeholder="Company Ltd." readonly>
+                            <input value="{$usuario->getEmpresa()}" type="text" id="empresa" class="form-control" placeholder="Company Ltd." readonly name="empresa">
                             <label for="empresa">Empresa</label>
                           </div>
 
